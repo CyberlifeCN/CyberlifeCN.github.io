@@ -8,5 +8,20 @@ Host on GitHub
 注意仓库名 github.io 的前缀必须是 GitHub 上的用户名
 2. 添加CNAME文件
 在仓库根目录下添加一个CNAM文件，没有后缀名，里面内容为你的域名(如:cyber-life.cn),不需要添加http/www等前缀。
-3. 添加 DNS  Service记录
-去 [DNSPod](https://www.dnspod.cn) 注册个账号，添加域名，设置两个A记录。分别是@和w w w，ip地址填上。
+3. ping cyberlifecn.github.io 记录下IP地址
+    $ ping cyberlifecn.github.io
+    PING sni.github.map.fastly.net (151.101.41.147): 56 data bytes
+    64 bytes from 151.101.41.147: icmp_seq=0 ttl=41 time=290.620 ms
+    64 bytes from 151.101.41.147: icmp_seq=1 ttl=41 time=305.150 ms
+    64 bytes from 151.101.41.147: icmp_seq=2 ttl=41 time=323.938 ms
+    64 bytes from 151.101.41.147: icmp_seq=3 ttl=41 time=242.839 ms
+    64 bytes from 151.101.41.147: icmp_seq=4 ttl=41 time=232.187 ms
+    64 bytes from 151.101.41.147: icmp_seq=5 ttl=41 time=285.011 ms
+    ^C
+    --- sni.github.map.fastly.net ping statistics ---
+    6 packets transmitted, 6 packets received, 0.0% packet loss
+    round-trip min/avg/max/stddev = 232.187/279.957/323.938/32.578 ms
+4. 向你的 DNS 配置中添加 2 条记录
+    @          A             151.101.41.147
+    @          A             192.30.252.154
+    www      CNAME           cyberlifecn.github.io.
