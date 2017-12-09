@@ -3,7 +3,7 @@
 # CyberlifeCN.github.io
 Host on GitHub
 
-### 怎样将域名绑定到 github pages 博客上
+## 怎样将域名绑定到 github pages 博客上
 1. 创建仓库 CyberlifeCN.github.io
 注意仓库名 github.io 的前缀必须是 GitHub 上的用户名
 2. 添加CNAME文件
@@ -24,3 +24,33 @@ Host on GitHub
 
         @          A             151.101.41.147
         www      CNAME           cyberlifecn.github.io
+
+## 使用hugo搭建个人博客站点
+### 安装golang
+    # yum install go
+
+### 编辑环境变量
+    $ vi ~/.bashrc
+    export GOROOT=/usr/lib/golang
+    export GOPATH=$HOME/go
+    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+### 安装 hugo
+    $ go get -u -v github.com/gohugoio/hugo
+
+### 生成自己的站点：
+    $ hugo new site mysite
+
+### 下载主题样式
+    $ cd themes
+    $ git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git
+    $ cp -R themes/hugo-type-theme/exampleSite/* .
+    $ vi config.toml
+    # Comment the themesDir option if you use this theme in production
+    #themesDir = "../.."
+
+### 启动
+    $ hugo server --theme=hugo-icarus-theme --buildDrafts --watch
+
+### 访问 
+    http://localhost:1313/
