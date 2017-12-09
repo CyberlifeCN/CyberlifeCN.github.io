@@ -7,4 +7,4 @@ Host on GitHub
 1. 创建仓库 CyberlifeCN.github.io
 注意仓库名 github.io 的前缀必须是 GitHub 上的用户名
 2. 添加CNAME文件
-在仓库根目录下添加一个CNAM文件，没有后缀名，里面内容为你的域名(如:test.com),不需要添加http/www等前缀。
+在仓库根目录下添加一个CNAM文件，没有后缀名，里面内容为你的域名(如:cyber-life.cn),不需要添加http/www等前缀。
