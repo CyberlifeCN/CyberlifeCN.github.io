@@ -37,17 +37,18 @@ Host on GitHub
 
 ### 安装 hugo
     $ go get -u -v github.com/gohugoio/hugo
-
+    
 ### 生成自己的站点：
     $ hugo new site mysite
-
+    
 ### 下载主题样式
     $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git
-    $ cp -R themes/hugo-type-theme/exampleSite/* .
-    $ vi config.toml
-    # Comment the themesDir option if you use this theme in production
-    #themesDir = "../.."
+    $ git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git 
+    $ cp -R themes/hugo-type-theme/exampleSite/* . 
+    $ vi config.toml 
+    # Comment the themesDir option if you use this theme in production 
+    #themesDir = "../.." 
+    
 
 ### 启动
     $ hugo server --theme=hugo-icarus-theme --buildDrafts --watch
