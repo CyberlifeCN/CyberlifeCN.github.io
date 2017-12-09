@@ -45,7 +45,7 @@ Host on GitHub
     $ cd themes
     $ git clone 'https://github.com/digitalcraftsman/hugo-icarus-theme.git'
     
-    $ cp -R themes/hugo-type-theme/exampleSite/* .
+    $ cp -R themes/hugo-icarus-theme/exampleSite/* .
     $ vi config.toml 
     # Comment the themesDir option if you use this theme in production 
     #themesDir = "../.." 
