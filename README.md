@@ -42,17 +42,18 @@ Host on GitHub
     $ hugo new site mysite
 
 ### 下载主题样式
-    $ cd themes
-    $ git clone 'https://github.com/digitalcraftsman/hugo-icarus-theme.git'
-
-    $ cp -R themes/hugo-icarus-theme/exampleSite/* .
-    $ vi config.toml
-    # Comment the themesDir option if you use this theme in production
-    #themesDir = "../.."
+```
+$ cd themes
+$ git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git
+$ cp -R themes/hugo-icarus-theme/exampleSite/* .
+$ vi config.toml
+# Comment the themesDir option if you use this theme in production
+#themesDir = "../.."
+```
 
 ### 启动
     $ hugo server --theme=hugo-icarus-theme --buildDrafts --watch
-    $ hugo server --watch --baseUrl=http://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false
+    $ hugo server --watch --baseUrl=https://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false
 
 ### 访问 
     http://localhost:1313/
