@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyberlife</title>
+    <title>数码生活维基</title>
     <link>http://cyber-life.cn/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>数码生活维基的最新文章，总结互联网软件开发、运维管理知识与经验</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
 
