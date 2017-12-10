@@ -71,7 +71,7 @@ theme = "hugo-icarus-theme"
 # Add your social network accounts to the profile section on the left
 # by entering your username. The links to your account will be
 # created automatically.
-    github          = "digitalcraftsman"
+    github          = "CyberlifeCN"
     gitlab          = ""
     bitbucket       = ""
     jsfiddle        = ""

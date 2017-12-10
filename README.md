@@ -56,3 +56,10 @@ Host on GitHub
 
 ### 访问 
     http://localhost:1313/
+
+
+## 常用命令
+* Linux下通过端口查看进程
+    $ netstat -anp|grep 1313
+* 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+    $ hugo new post/first.md
