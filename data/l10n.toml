@@ -18,7 +18,7 @@
     next = "下一页"
 
 [profile]
-    follow_button = "Follow"
+    follow_button = "关注我"
     tags = "标签"
     posts = "文章"
 

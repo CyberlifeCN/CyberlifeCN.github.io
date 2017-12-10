@@ -25,13 +25,14 @@ Hugo是一个强大的静态博客生成器，由spf13使用Golang开发。在�
     $ hugo new site mysite
 
 ### 下载主题样式
-    $ cd themes
-    $ git clone 'https://github.com/digitalcraftsman/hugo-icarus-theme.git'
-
-    $ cp -R themes/hugo-icarus-theme/exampleSite/* .
-    $ vi config.toml
-    # Comment the themesDir option if you use this theme in production
-    #themesDir = "../.."
+```
+$ cd themes
+$ git clone https://github.com/digitalcraftsman/hugo-icarus-theme.git
+$ cp -R themes/hugo-icarus-theme/exampleSite/* .
+$ vi config.toml
+# Comment the themesDir option if you use this theme in production
+#themesDir = "../.."
+```
 
 ### 启动
     # 本地测试启动脚本
