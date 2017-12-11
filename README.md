@@ -53,7 +53,7 @@ $ vi config.toml
 
 ### 启动
     $ hugo server --theme=hugo-icarus-theme --buildDrafts --watch
-    $ hugo server --watch --baseUrl=https://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false
+    $ hugo server --baseUrl=https://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false --disableLiveReload=true
 
 ### 访问 
     http://localhost:1313/
