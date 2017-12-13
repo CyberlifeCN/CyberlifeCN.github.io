@@ -1,8 +1,20 @@
 ---
 title: "Tornado 如何自动生成 Rest API 文档"
 date: 2017-12-13T14:49:43+08:00
-draft: true
+categories: ["programming"]
+tags: ["python", "tornado", "swagger", "api", "doc"]
 ---
+
++++
+banner = ""
+categories = []
+date = "2017-05-20T12:00:23+02:00"
+description = ""
+images = []
+menu = ""
+tags = []
+title = "Using the gallery shortcode"
++++
 
 前一段时间学习使用Golang，使用了beego创建了第一个apiserver，发现beego集成了Swagger。
 Swagger 是一个规范和完整的框架，用于生成、描写叙述、调用和可视化 RESTful 风格的 Web 服务。整体目标是使client和文件系统作为服务器以相同的速度来更新。
@@ -80,5 +92,8 @@ http://localhost:7117/swagger/spec.html
 
 ### [Demo](http://docs.domicake.com/swagger/spec.html)
 注意要点击【List Operations】菜单才能看到API列表
+
+### 主要参考资料：
+* [tornado-swagger] (https://github.com/SerenaFeng/tornado-swagger)
 
 <!--more-->

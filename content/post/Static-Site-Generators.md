@@ -1,6 +1,8 @@
 ---
 title: "静态网站生成器"
 date: 2017-12-10T22:00:40+08:00
+categories: ["deploy"]
+tags: ["golang", "hugo"]
 draft: true
 ---
 

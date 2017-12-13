@@ -1,6 +1,8 @@
 ---
 title: "怎样将域名绑定到 github pages 博客上"
 date: 2017-12-10T19:39:57+08:00
+categories: ["deploy"]
+tags: ["github"]
 draft: true
 ---
 

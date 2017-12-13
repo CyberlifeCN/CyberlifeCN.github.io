@@ -1,6 +1,8 @@
 ---
 title: "使用hugo搭建个人博客站点"
 date: 2017-12-10T19:59:43+08:00
+categories: ["deploy"]
+tags: ["golang", "programming", "theme", "hugo"]
 draft: true
 ---
 
