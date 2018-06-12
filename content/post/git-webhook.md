@@ -10,6 +10,19 @@ banner: "imgs/git-hooks.jpg"
 
 <!--more-->
 
+## git webhooks
+We’ll send a POST request to the URL below with details of any subscribed events. You can also specify which data format you’d like to receive (JSON, x-www-form-urlencoded, etc). More information can be found in our developer documentation.
+
+### Payload URL
+http://webhook.cyber-life.cn/webhookit
+
+### Content type
+Application/x-www-form-urlencoded
+
+### Secret
+### Which events would you like to trigger this webhook?
+st the push event.
+
 ## webhookit
 一个极简的命令行版本的 git webhok，部署容易，非常简单就可以部署一个 webhook server。支持GitHub, GitLab, GitOsc, Gogs, Coding。Python 2 / 3 都支持。
 
