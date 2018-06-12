@@ -3,7 +3,7 @@ title: "git - webhook自动部署"
 date: 2018-06-13T01:23:52+08:00
 categories: ["deploy"]
 tags: ["programming"]
-banner: "imgs/git-workflow.png"
+banner: "imgs/git-hooks.jpg"
 ---
 
 前段时间在自己的服务器上搭好了自己的blog，但是如果每次写完都要用一些文件传输的工具上传到自己的服务器就显得很低效是吧，也会降低自己写代码的动力。现在就借着自己的github，用一个webhook就可以自动将自己的github上的代码部署到web目录下了。那么这样我们只要push一下代码到master上就可以自动生效了，用浏览器重新访问下网站就可以看了勒( •̀ ω •́ )。
