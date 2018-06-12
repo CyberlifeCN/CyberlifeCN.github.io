@@ -19,7 +19,7 @@ theme = "hugo-icarus-theme"
 
 [params]
     # Tell me who you are
-    author = "璟天"
+    author = "编程浪子"
     bio = "Blogger - Programmer - Gopher"
     location = "中国 · 北京"
     site_description = ""
