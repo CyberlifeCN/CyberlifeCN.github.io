@@ -76,6 +76,16 @@ webhookit -c config4hustcc.py
 * webhook 的 URL 地址；
 * webhook 的配置信息（隐藏私密信息）；
 
+## 最后一项工作，自动pull代码已经重启web服务
+```
+vi exec_hook_shell.sh
+cd /home/thomas/go/src/CyberlifeCN.github.io
+git pull
+# restart golang hugo server
+pid=`ps -ef|grep hugo |grep -v grep| awk '{print $2;}'`
+kill $pid
+hugo server --baseUrl=http://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false --disableLiveReload=true &
+```
 
 ### 主要参考资料：
 * [webhookit](https://github.com/hustcc/webhookit)
