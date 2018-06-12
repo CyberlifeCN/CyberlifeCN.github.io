@@ -2,8 +2,7 @@
 title: "git - 实用手册"
 date: 2018-06-12T22:58:43+08:00
 categories: ["deploy"]
-tags: ["programming",]
-draft: true
+tags: ["programming"]
 ---
 
 新入职几名员工，使用git时经常出错，发生冲突的现象时有发生，赶紧写一篇文档，固定操作流程，避免大家继续犯错。
