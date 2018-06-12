@@ -3,6 +3,7 @@ title: "Tornado 如何自动生成 Rest API 文档"
 date: 2017-12-13T14:49:43+08:00
 categories: ["programming"]
 tags: ["python", "tornado", "swagger", "api", "doc"]
+banner: "imgs/Swagger-api-development.png"
 ---
 
 前一段时间学习使用Golang，使用了beego创建了第一个apiserver，发现beego集成了Swagger。

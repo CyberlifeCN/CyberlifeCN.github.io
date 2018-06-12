@@ -3,6 +3,7 @@ title: "使用hugo搭建个人博客站点"
 date: 2017-12-10T19:59:43+08:00
 categories: ["deploy"]
 tags: ["golang", "programming", "theme", "hugo"]
+banner: "imgs/hugo-theme.png"
 ---
 
 Hugo是一个强大的静态博客生成器，由spf13使用Golang开发。在性能和生成文章的速度上都不错。目前的版本是0.31.1，依然没有迈出1.0的大版本号。开始用Hugo进行博客写作了。
