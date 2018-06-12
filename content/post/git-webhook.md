@@ -10,7 +10,7 @@ banner: "imgs/git-workflow.png"
 
 <!--more-->
 
-{{< gallery "/imgs/git-operations.png" >}}
+{{< gallery "/imgs/git-webhook.png" >}}
 
 ## webhookit
 一个极简的命令行版本的 git webhok，部署容易，非常简单就可以部署一个 webhook server。支持GitHub, GitLab, GitOsc, Gogs, Coding。Python 2 / 3 都支持。
@@ -57,6 +57,13 @@ Python 变量名 WEBHOOKIT_CONFIGURE 不要去修改。
 
 ### 4. 运行 http server
 webhookit -c config4hustcc.py
+
+### 5. 查看运行结果
+然后在浏览器中打开 http://localhost:18340 就可以看到下面的一些信息了：
+
+* webhook 执行的状态；
+* webhook 的 URL 地址；
+* webhook 的配置信息（隐藏私密信息）；
 
 
 ### 主要参考资料：
