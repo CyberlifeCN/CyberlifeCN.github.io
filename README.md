@@ -64,4 +64,3 @@ $ vi config.toml
     $ netstat -anp|grep 1313
 * 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
     $ hugo new post/first.md
-
