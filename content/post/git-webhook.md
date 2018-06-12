@@ -10,8 +10,6 @@ banner: "imgs/git-hooks.jpg"
 
 <!--more-->
 
-{{< gallery "/imgs/git-webhook.png" >}}
-
 ## webhookit
 一个极简的命令行版本的 git webhok，部署容易，非常简单就可以部署一个 webhook server。支持GitHub, GitLab, GitOsc, Gogs, Coding。Python 2 / 3 都支持。
 
