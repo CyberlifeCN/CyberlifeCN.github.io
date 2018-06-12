@@ -74,7 +74,7 @@ if __name__ == "__main__":
     $ python swagger.py
 
 ### 验证
-    curl http://localhost:7117/swagger/spec
+    $ curl http://localhost:7117/swagger/spec
 
 ### 通过浏览器访问
 http://localhost:7117/swagger/spec.html
