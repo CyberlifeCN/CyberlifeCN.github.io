@@ -12,22 +12,15 @@ banner: "imgs/git-workflow.png"
 
 {{< gallery "/imgs/git-operations.png" >}}
 
-### 每次提交时的标准操作流程
-```
-git stash
-git pull -p
-git stash pop(may be conflict, please modify your code)
-git add .
-git commit -m "message"
-git push
-```
+## webhookit
+一个极简的命令行版本的 git webhok，部署容易，非常简单就可以部署一个 webhook server。支持GitHub, GitLab, GitOsc, Gogs, Coding。Python 2 / 3 都支持。
 
 ### 如果发现错误的将不想staging的文件add进入index之后，想回退取消，则可以使用命令
 git reset HEAD^
 
 
 ### 主要参考资料：
-* [git - 简易指南] (http://www.bootcss.com/p/git-guide/)
-* [Git 使用规范流程] (http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
+* [webhookit] (https://github.com/hustcc/webhookit)
+* [gitlab之webhook自动部署] (https://www.jianshu.com/p/00bc0323e83f)
 
 <!--more-->
