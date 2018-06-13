@@ -1,10 +1,9 @@
 +++
-banner = ""
+banner = "imgs/markdown.png"
 categories = []
 date = "2017-05-20T12:10:51+02:00"
 description = ""
 images = []
-banner = "imgs/markdown.png"
 menu = ""
 tags = ["markdown"]
 title = "Markdown Cheat Sheet"
