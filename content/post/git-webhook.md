@@ -21,7 +21,7 @@ Application/x-www-form-urlencoded
 
 ### Secret
 ### Which events would you like to trigger this webhook?
-st the push event.
+just the push event.
 
 ## webhookit
 一个极简的命令行版本的 git webhok，部署容易，非常简单就可以部署一个 webhook server。支持GitHub, GitLab, GitOsc, Gogs, Coding。Python 2 / 3 都支持。
@@ -54,8 +54,8 @@ WEBHOOKIT_CONFIGURE = {
         'PWD': '',  # user password or private key.
 
         # The webhook shell script path.
-        'SCRIPT': '/home/hustcc/exec_hook_shell.sh'
-    }, 
+        'SCRIPT': '/home/thomas/exec_hook_shell.sh'
+    },
 	...],
 	...
 }
