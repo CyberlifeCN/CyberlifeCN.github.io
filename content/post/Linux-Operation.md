@@ -2,14 +2,14 @@
 banner = "imgs/linux-5_banner.jpg"
 categories = ["Linux"]
 date = "2018-06-13T21:24:51+08:00"
-description = ""
+description = "linux 运维中常用命令总结"
 images = []
 menu = ""
 tags = ["Operation"]
 title = "Linux Operation"
 +++
 
-linux 运维中常用命令总结
+linux 初始化时经常使用，总结一下！
 
 <!--more-->
 
