@@ -1,5 +1,6 @@
 ---
 title: "git - 实用手册"
+url: "/git-manual"
 date: 2018-06-12T22:58:43+08:00
 categories: ["deploy"]
 tags: ["programming"]
