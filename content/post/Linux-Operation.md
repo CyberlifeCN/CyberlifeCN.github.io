@@ -1,7 +1,7 @@
 +++
 title = "Linux Operation"
 date = "2018-06-13T21:24:51+08:00"
-url: "2018/06/13/linux-operation"
+url = "2018/06/13/linux-operation"
 description = "linux 运维中常用命令总结"
 images = []
 menu = ""
