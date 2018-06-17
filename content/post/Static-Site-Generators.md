@@ -1,6 +1,7 @@
 ---
 title: "静态网站生成器"
 date: 2017-12-10T22:00:40+08:00
+url: "2017/12/10/static-site-generator"
 categories: ["deploy"]
 tags: ["golang", "hugo"]
 banner: "imgs/hugo-logo.png"

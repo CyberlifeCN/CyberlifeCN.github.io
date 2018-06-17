@@ -1,12 +1,13 @@
 +++
+title = "Markdown Cheat Sheet"
+date = "2017-05-20T12:10:51+02:00"
+url: "2017/05/20/markdown-cheat-sheet"
 banner = "imgs/markdown.png"
 categories = []
-date = "2017-05-20T12:10:51+02:00"
 description = ""
 images = []
 menu = ""
 tags = ["markdown"]
-title = "Markdown Cheat Sheet"
 +++
 
 This note demonstrates some of what [Markdown][1] is capable of doing.

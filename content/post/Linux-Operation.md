@@ -1,12 +1,13 @@
 +++
-banner = "imgs/linux-5_banner.jpg"
-categories = ["Linux"]
+title = "Linux Operation"
 date = "2018-06-13T21:24:51+08:00"
+url: "2018/06/13/linux-operation"
 description = "linux 运维中常用命令总结"
 images = []
 menu = ""
 tags = ["Operation"]
-title = "Linux Operation"
+categories = ["Linux"]
+banner = "imgs/linux-5_banner.jpg"
 +++
 
 linux 初始化时经常使用，总结一下！
