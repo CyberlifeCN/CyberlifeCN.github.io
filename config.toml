@@ -20,6 +20,10 @@ theme = "hugo-icarus-theme"
     post = "/:year/:month/:day/:slug"
 
 
+[head_title]
+    other = "Mitmekeelne"
+
+
 [params]
     # Tell me who you are
     author = "编程浪子"
@@ -109,6 +113,3 @@ theme = "hugo-icarus-theme"
     categories = true
     tags = true
     tag_cloud = true
-
-[head_title]
-    other = "Mitmekeelne"
