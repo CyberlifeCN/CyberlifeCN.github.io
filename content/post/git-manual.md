@@ -1,7 +1,7 @@
 ---
 title: "git - 实用手册"
-link: "2018/06/12/git-manual"
-url: "2018/06/12/git-manual"
+link: "git-manual"
+url: "git-manual"
 date: 2018-06-12T22:58:43+08:00
 categories: ["deploy"]
 tags: ["programming"]

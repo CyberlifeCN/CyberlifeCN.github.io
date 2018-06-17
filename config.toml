@@ -106,3 +106,6 @@ theme = "hugo-icarus-theme"
     categories = true
     tags = true
     tag_cloud = true
+
+[head_title]
+    other = "Mitmekeelne"
