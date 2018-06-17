@@ -7,8 +7,8 @@
 
 # Linked older/newer posts at the bottom of each one
 [articles.linked_posts]
-    older = "上一篇"
-    newer = "下一篇"
+    older = "下一篇"
+    newer = "上一篇"
 
 [search]
     placeholder = "搜索"
