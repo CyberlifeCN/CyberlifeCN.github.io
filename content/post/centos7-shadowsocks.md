@@ -3,7 +3,7 @@ title: "CentOS 7 安装使用 Shadowsocks 客户端"
 date: 2018-06-19T14:04:55+08:00
 url: "2018/06/19/centos7-shadowsocks"
 categories: ["deploy"]
-tags: ["linux"]
+tags: ["linux","翻墙"]
 banner: "imgs/shadowsocks.jpeg"
 ---
 

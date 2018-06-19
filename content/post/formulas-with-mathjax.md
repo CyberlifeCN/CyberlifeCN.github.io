@@ -5,7 +5,7 @@ date = "2017-05-20T11:58:06+02:00"
 description = ""
 images = []
 menu = ""
-tags = []
+tags = ["markdown"]
 title = "Formulas with MathJax"
 +++
 

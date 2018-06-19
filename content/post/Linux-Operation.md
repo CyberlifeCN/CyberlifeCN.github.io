@@ -5,8 +5,8 @@ url = "2018/06/13/linux-operation"
 description = "linux 运维中常用命令总结"
 images = []
 menu = ""
-tags = ["Operation"]
-categories = ["Linux"]
+tags = ["linux"]
+categories = ["deploy"]
 banner = "imgs/linux-5_banner.jpg"
 +++
 

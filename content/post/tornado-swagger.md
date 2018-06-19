@@ -3,7 +3,7 @@ title: "Tornado 如何自动生成 Rest API 文档"
 date: 2017-12-13T14:49:43+08:00
 url: "2017/12/13/torando-swagger"
 categories: ["programming"]
-tags: ["python", "tornado", "swagger", "api", "doc"]
+tags: ["python", "api"]
 banner: "imgs/Swagger-api-development.png"
 ---
 

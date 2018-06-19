@@ -3,7 +3,7 @@ title: "Centos7 下安装 VLC 视频播放器"
 date: 2018-06-19T15:14:55+08:00
 url: "2018/06/19/centos7-vlc"
 categories: ["deploy"]
-tags: ["linux"]
+tags: ["linux","music"]
 banner: "imgs/vlc.jpg"
 ---
 
