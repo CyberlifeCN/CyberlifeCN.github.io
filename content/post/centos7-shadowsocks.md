@@ -122,13 +122,13 @@ Proxy-Connection: keep-alive
 ### 取消使用代理
 ```
 while read var;
-do unset $var; 
+do unset $var;
 done < <(env | grep -i proxy | awk -F= '{print $1}')
 ```
 
-#参考链接：
+# 参考链接：
 
-* (http://blog.csdn.net/u012375924/article/details/78706910)
-* (https://www.zybuluo.com/ncepuwanghui/note/954160)
+* [centos7下终端使用代理](http://blog.csdn.net/u012375924/article/details/78706910)
+* [CentOS 7安装配置Shadowsocks客户端](https://www.zybuluo.com/ncepuwanghui/note/954160)
 
 <!--more-->
