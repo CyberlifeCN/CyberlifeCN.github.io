@@ -4,7 +4,7 @@ date: 2018-06-19T15:14:55+08:00
 url: "2018/06/19/centos7-vlc"
 categories: ["deploy"]
 tags: ["linux"]
-banner: "imgs/vlc.jpeg"
+banner: "imgs/vlc.jpg"
 ---
 
 打算在centos7.2上安装一个叫MPlayer的视频播放器，但是折腾好久，得到的结果只是可以播放，但是却没有声音。无奈之下另寻他路。最后选择安装VLC视频播放器。
