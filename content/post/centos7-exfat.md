@@ -52,7 +52,6 @@ $ sudo vi /etc/yum.repos.d/nux-dextop.repo
 $ sudo yum --enablerepo=nux-dextop install <package-name>
 ```
 
-
 ## 安装exfat支持库文件
 ```
 yum --enablerepo=nux-dextop  install fuse-exfat exfat-utils
