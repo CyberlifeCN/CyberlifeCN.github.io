@@ -120,7 +120,11 @@ Vary: Accept-Encoding
 Proxy-Connection: keep-alive
 ```
 ### 取消使用代理
-while read var; do unset $var; done < <(env | grep -i proxy | awk -F= '{print $1}')
+```
+while read var;
+do unset $var; 
+done < <(env | grep -i proxy | awk -F= '{print $1}')
+```
 
 #参考链接：
 
