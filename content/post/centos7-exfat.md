@@ -56,4 +56,12 @@ $ sudo yum --enablerepo=nux-dextop install <package-name>
 ```
 yum --enablerepo=nux-dextop  install fuse-exfat exfat-utils
 ```
+
+## 开机启动时自动mount
+```
+sudo vi /etc/fstab
+最后一行加入
+/dev/sda2     /media/musik     exfat   defaults    0 0
+sudo mount -a
+```
 <!--more-->
