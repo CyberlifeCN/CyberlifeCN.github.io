@@ -7,30 +7,30 @@ tags: ["linux"]
 banner: "imgs/RestAssuredAPITesting.jpg"
 ---
 
-As we move towards more Agile shift-left software development processes like continuous integration and delivery, the need to quickly give test feedback to our developers is increasing.
+随着我们转向更灵活的敏捷软件开发过程，如持续集成和交付，快速向开发人员提供测试反馈的需求正在增加。
 
-One downfall to UI tests is they are slow, making them a poor choice for letting developers know quickly if their code has broken the latest build or not. API tests, on the other hand, tend to be faster and run more reliably than GUI tests.
+UI测试的一个缺点是它们很慢，这使它们成为让开发人员快速知道他们的代码是否破坏了最新的构建的糟糕选择。另一方面，API测试往往比GUI测试更快、运行更可靠。
 
 <!--more-->
-# What is an API?
-Application Programming Interfaces (API) is a specification that acts as an interface for software components.
+# 什么是 API?
+应用程序编程接口(API)是作为软件组件接口的规范。
 
-While most functional testing involves testing a user interface like a web page or a dot net form, API testing involves bypassing a user interface and communicating directly with an application by making calls to its APIs.
+虽然大多数功能测试都涉及到测试用户界面(如web页面或dot net表单)，但API测试涉及绕过用户界面，通过调用应用程序的API直接与应用程序通信。
 
-API testing allows you to test headless technologies like JMS HTTP, databases and Web services.
+API测试允许您测试诸如JMS HTTP、数据库和Web services之类的接口。
 
-API testing is sometimes called “headless” testing. Most headless testing consists of bypassing the UI and sending a request directly to an application’s backend or service and receiving a response while validating the response to ensure things are working as we expect them to.
+API测试有时被称为“无头”测试。大多数无头测试包括绕过UI，直接向应用程序的后端或服务发送请求，并在验证响应的同时接收响应，以确保事情按照我们的预期运行。
 
-This simple example is often referred to as a client/server relationship. A client makes a request by asking for a resource; the request then goes out and finds a server that can fill that request. The server locates the desired resource and sends a response back to the client.
+这个简单的例子通常被称为客户端/服务器关系。客户机通过请求资源发出请求;然后请求走出去并找到一个可以填充该请求的服务器。服务器定位所需的资源并向客户端发送响应。
 
-# What API Testing Tools Can I Use to Automate API Testing?
-Since Selenium is just for browser-based testing, you may be wondering which tool to use for Rest and Soap web service-based testing.
+# 什么测试工具能做自动化的 API 测试工具?
+由于Selenium只是用于基于浏览器的测试，所以您可能想知道用于Rest和Soap web服务测试的工具是什么。
 
 # RESTClient, a debugger for RESTful web services.
-RESTClient has been completely rewritten for compatible with Firefox 57. Some functions are still missing (OAuth & OAuth 2.0 authentication).
+RESTClient已经完全重写，以与Firefox 57兼容。一些函数仍然缺失(OAuth & OAuth 2.0身份验证)。
 
 {{< gallery "/imgs/RESTClient.png" >}}
 
-RESTClient supports all HTTP methods RFC2616 (HTTP/1.1) and RFC2518 (WebDAV). You can construct custom HTTP request (custom method with resources URI and HTTP request Body) to directly test requests against a server.
+RESTClient支持所有HTTP方法RFC2616 (HTTP/1.1)和RFC2518 (WebDAV)。您可以构造自定义HTTP请求(具有资源URI和HTTP请求体的自定义方法)，以直接针对服务器测试请求。
 
 <!--more-->

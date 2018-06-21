@@ -25,5 +25,5 @@ Dukto 具有一个时髦的 METRO UI，而且操作方便，无需配置，登�
 
 * [Mac版下载](http://www.pc6.com/mac/248218.html)
 * [Linux版下载](https://software.opensuse.org/download.html?project=home:colomboem&package=dukto)
-* [Windows版下载](http://www.pc6.com/softview/SoftView_79769.html)
+* [Windows版下载](https://sourceforge.net/projects/dukto/)
 <!--more-->
