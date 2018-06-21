@@ -23,7 +23,7 @@ Dukto 具有一个时髦的 METRO UI，而且操作方便，无需配置，登�
 如今 Dukto 已开发到了第六代，他们也推出了重写的 iOS 版本客户端供大家使用。双击 Buddies 列表下的设备名称即可进入文件传输节目（下图最右侧截图），你可以在这里发送文本、剪切板文本，任意格式的文件，甚至是文件夹。
 {{< gallery "/imgs/dukto2.png" >}}
 
-[Mac版下载](http://www.pc6.com/mac/248218.html)
-[Linux版下载](https://software.opensuse.org/download.html?project=home:colomboem&package=dukto)
-[Windows版下载](http://www.pc6.com/softview/SoftView_79769.html)
+* [Mac版下载](http://www.pc6.com/mac/248218.html)
+* [Linux版下载](https://software.opensuse.org/download.html?project=home:colomboem&package=dukto)
+* [Windows版下载](http://www.pc6.com/softview/SoftView_79769.html)
 <!--more-->
