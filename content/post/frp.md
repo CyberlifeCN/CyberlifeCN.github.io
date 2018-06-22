@@ -1,5 +1,5 @@
 ---
-title: "利用FRP搭建内网穿透实现反向代理"
+title: "利用 FRP 搭建内网穿透实现反向代理"
 date: 2018-06-22T14:17:55+08:00
 url: "2018/06/22/frp"
 categories: ["deploy"]
@@ -11,6 +11,8 @@ banner: "imgs/ngrok-frp.jpg"
 
 <!--more-->
 内网穿透说起来也算不上什么高深的技术，随着近些年微信公众号、支付宝生活号、小程序等新形态应用的持续火热，处于内网开发环境外网无法访问一直困扰着不少开发者。如何将内网服务暴露给外网访问？早些年的国产代表作有花生壳（收费），Github上开源产品有Ngrok、Frp等，我主要在Linux上使用Frp做反向代理。
+
+# frp 全名 Fast Reverse Proxy
 
 ## 公网主机配置
 ```
@@ -91,6 +93,10 @@ systemctl status frp.service
 通过 ssh 访问内网机器，假设用户名为 test
 ```
 ssh -oPort=6000 test@x.x.x.x
+```
+通过 scp 发送文件到内网机器，假设用户名为 test
+```
+scp -P 6000 local_file test@x.x.x.x:.
 ```
 
 
