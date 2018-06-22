@@ -30,6 +30,8 @@ Description=frp
 [Service]
 TimeoutStartSec=0
 ExecStart=/home/thomas/frp_0.20.0_linux_386/frps -c /home/thomas/frp_0.20.0_linux_386/frps.ini
+Restart=on-failure
+RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
@@ -73,6 +75,8 @@ Description=frp
 [Service]
 TimeoutStartSec=0
 ExecStart=/home/thomas/frp_0.20.0_linux_386/frpc -c /home/thomas/frp_0.20.0_linux_386/frpc.ini
+Restart=on-failure
+RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
