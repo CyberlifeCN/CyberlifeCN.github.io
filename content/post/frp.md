@@ -21,6 +21,25 @@ cd frp_0.20.0_linux_386
 ```
 注意：别忘记将公网主机的防火墙端口 6000 和 7000 打开
 
+## 公网主机配置自启动
+
+新建启动脚本文件/etc/systemd/system/frp.service，内容如下：
+```
+[Unit]
+Description=frp
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/thomas/frp_0.20.0_linux_386/frps -c /home/thomas/frp_0.20.0_linux_386/frps.ini
+[Install]
+WantedBy=multi-user.target
+```
+启动 frp 服务
+```
+systemctl enable frp.service
+systemctl start frp.service
+systemctl status frp.service
+```
+
 ## 内网主机配置
 ```
 wget https://github.com/fatedier/frp/releases/download/v0.20.0/frp_0.20.0_linux_386.tar.gz
@@ -43,6 +62,25 @@ remote_port = 6000
 启动
 ```
 ./frpc -c ./frpc.ini
+```
+
+## 内网主机配置自启动
+
+新建启动脚本文件/etc/systemd/system/frp.service，内容如下：
+```
+[Unit]
+Description=frp
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/thomas/frp_0.20.0_linux_386/frpc -c /home/thomas/frp_0.20.0_linux_386/frpc.ini
+[Install]
+WantedBy=multi-user.target
+```
+启动 frp 服务
+```
+systemctl enable frp.service
+systemctl start frp.service
+systemctl status frp.service
 ```
 
 ## 外网主机使用
