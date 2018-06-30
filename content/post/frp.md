@@ -42,6 +42,7 @@ WantedBy=multi-user.target
 systemctl enable frp.service
 systemctl start frp.service
 systemctl status frp.service
+systemctl daemon-reload
 ```
 
 ## 内网主机配置
@@ -87,6 +88,7 @@ WantedBy=multi-user.target
 systemctl enable frp.service
 systemctl start frp.service
 systemctl status frp.service
+systemctl daemon-reload
 ```
 
 ## 外网主机使用
