@@ -51,40 +51,41 @@ Exec=chromium-browser --kiosk "http://127.0.0.1/" --disable-desktop-notification
 
 ## 制作一个 Web server 显示IP地址
 ```
-cd tornado-4.5/demos/helloworld
-vi helloworld.py
+mkdir git
+cd git
+git clone https://github.com/CyberlifeCN/simple-site.git
+```
 
-修改端口号为80
-define("port", default=80, help="run on the given port", type=int)
+## 安装pip
+```
+$ wget https://bootstrap.pypa.io/get-pip.py
+$ python get-pip.py
+```
 
-启动
-sudo python helloworld.py
-
-获取IP地址
-cmd = "ifconfig eth0|grep inet|grep netmask|awk '{print $2;'}"
-p = os.popen(cmd)
-ipaddrs = p.read()
-self.write("<h1>"+ipaddrs+"</h1>")
+## 安装 tornado-4.3
+```
+sudo pip install --upgrade pip
+sudo pip install tornado==4.3
 ```
 
 ## 配置自启动
-新建启动脚本文件/etc/systemd/system/helloworld.service，内容如下：
+新建启动脚本文件/etc/systemd/system/simplesite.service，内容如下：
 ```
 [Unit]
-Description=helloworld
+Description=simplesite
 [Service]
 TimeoutStartSec=0
-ExecStart=/usr/bin/python /home/pi/tornado-4.5/demos/helloworld/helloworld.py
+ExecStart=/usr/bin/python /home/pi/git/simplesite/simple-site.py
 Restart=on-failure
 RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
-启动 frp 服务
+启动 simplesite 服务
 ```
-systemctl enable helloworld.service
-systemctl start helloworld.service
-systemctl status helloworld.service
+systemctl enable simplesite.service
+systemctl start simplesite.service
+systemctl status simplesite.service
 systemctl daemon-reload
 ```
 
