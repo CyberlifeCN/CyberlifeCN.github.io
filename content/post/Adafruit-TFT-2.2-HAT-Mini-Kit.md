@@ -44,6 +44,10 @@ Option 6: Exit
 ```
 cd .config/autostart
 vi LXinput-setup.desktop
+
+注释掉
+#Exec=sh -c 'xset m 20/10 10 r rate 500 30 b on; xinput --set-prop "pointer:USB Optical Mouse" "libinput Accel Speed" 0.000000'
+
 添加2行
 Exec=xhost +
 Exec=chromium-browser --kiosk "http://127.0.0.1/" --disable-desktop-notifications --no-first-run --kiosk-printing
