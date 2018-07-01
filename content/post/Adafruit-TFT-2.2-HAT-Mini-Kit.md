@@ -93,6 +93,93 @@ systemctl status simplesite.service
 systemctl daemon-reload
 ```
 
+## 编写 GPIO 程序控制屏幕显示
+vi backlight.py
+```
+#!/usr/bin/env python
+# coding=utf-8
+# author:ksc
+
+import RPi.GPIO as GPIO
+import time
+import os,sys
+import signal
+
+GPIO.setmode(GPIO.BCM)
+
+#define GPIO pin
+btn_x=5
+btn_s=22
+btn_o=23
+pin_tft=27
+
+# Up, Down, left, right, fire
+GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #Trigon Button for GPIO24
+GPIO.setup(btn_x, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #X Button for GPIO5
+GPIO.setup(btn_o, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #Circle Button for GPIO23
+GPIO.setup(btn_s, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #Square Button for GPIO22
+GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #R Button for GPIO4
+GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP)  #L Button for GPIO7
+GPIO.setup(pin_tft, GPIO.OUT, initial=GPIO.HIGH)
+
+def cleanup():
+    '''释放资源，不然下次运行是可能会收到警告
+    '''
+    print('clean up')
+    GPIO.cleanup()
+
+
+def handleSIGTERM(signum, frame):
+    #cleanup()
+    sys.exit()#raise an exception of type SystemExit
+
+
+def onLightOff(channel):
+    print('pressed light off')
+    GPIO.output(pin_tft, GPIO.LOW) # off
+
+
+def onLightOn(channel):
+    print('pressed light on')
+    GPIO.output(pin_tft, GPIO.HIGH) # on
+
+
+GPIO.add_event_detect(btn_x, GPIO.FALLING, callback=onLightOff, bouncetime=500)
+GPIO.add_event_detect(btn_s, GPIO.FALLING, callback=onLightOn, bouncetime=500)
+
+
+#signal.signal(signal.SIGTERM, handleSIGTERM)
+try:
+    while True:
+        GPIO.output(pin_tft, GPIO.LOW)# blink led
+        time.sleep(1)
+except KeyboardInterrupt:
+    print('User press Ctrl+c ,exit;')
+finally:
+    cleanup()
+```
+
+## 配置自启动
+新建启动脚本文件/etc/systemd/system/backlight.service，内容如下：
+```
+[Unit]
+Description=backlight
+[Service]
+TimeoutStartSec=0
+ExecStart=/usr/bin/python /home/pi/bin/backlight.py
+Restart=on-failure
+RestartSec=5s
+[Install]
+WantedBy=multi-user.target
+```
+启动 backlight 服务
+```
+systemctl enable backlight.service
+systemctl start backlight.service
+systemctl status backlight.service
+systemctl daemon-reload
+```
+
 ### 资料
 * [Adafruit-PiTFT-Helper] (https://github.com/adafruit/Adafruit-PiTFT-Helper)
 * [Adafruit-PiTFT-2.2-Inch-HAT-PCB] (https://github.com/adafruit/Adafruit-PiTFT-2.2-Inch-HAT-PCB)
