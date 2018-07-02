@@ -44,8 +44,8 @@ sudo -H ./install.sh
 
 * 安装完毕，重启
 
-{{< gallery "/imgs/NanoHat-OLED1.jpg" >}}
 {{< gallery "/imgs/NanoHat-OLED2.jpg" >}}
+{{< gallery "/imgs/NanoHat-OLED1.jpg" >}}
 {{< gallery "/imgs/NanoHat-OLED3.jpg" >}}
 
 <!--more-->
