@@ -7,6 +7,7 @@ tags: ["linux","friendlyarm"]
 banner: "imgs/NanoHat-OLED.jpg"
 ---
 
+周末下单购买了NanoPi Neo2 金甲套装,配OLED显示屏，周一到公司了，配置成功。
 
 <!--more-->
 ## 官方镜像下载
@@ -19,31 +20,32 @@ http://download.friendlyarm.com/nanopineo2
 ```
 ssh pi@192.168.3.36
 密码：pi
-```
+
 User Name: root
-
 Password: fa
-
+```
 ## 安装 NanoHat OLED 软件包
 * 安装软件包前将软件包的源设置为国内：
+
 ```
 wget http://wiki.firendlyarm.com/utils/aptsouce.sh
 chmod 755 aptsouce.sh
 sudo -H ./aptsouce.sh
 sudo apt-get update
 ```
+
 * 执行
+
 ```
 git clone https://github.com/friendlyarm/NanoHatOLED.git
 cd NanoHatOLED
 sudo -H ./install.sh
 ```
+
 * 安装完毕，重启
 
-{{< gallery
-    "/imgs/NanoHat-OLED1.jpg"
-    "/imgs/NanoHat-OLED2.jpg"
-    "/imgs/NanoHat-OLED3.jpg"
->}}
+{{< gallery "/imgs/NanoHat-OLED1.jpg" >}}
+{{< gallery "/imgs/NanoHat-OLED2.jpg" >}}
+{{< gallery "/imgs/NanoHat-OLED3.jpg" >}}
 
 <!--more-->
