@@ -3,7 +3,7 @@ title: "NanoPi Neo2 金甲套装,配OLED显示屏"
 date: 2018-07-02T20:03:55+08:00
 url: "2018/07/02/nanopi-neo2"
 categories: ["deploy"]
-tags: ["linux","friendlyarm"]
+tags: ["linux","树莓派"]
 banner: "imgs/NanoHat-OLED.jpg"
 ---
 
@@ -48,4 +48,7 @@ sudo -H ./install.sh
 {{< gallery "/imgs/NanoHat-OLED1.jpg" >}}
 {{< gallery "/imgs/NanoHat-OLED3.jpg" >}}
 
+
+## 资料
+* [NanoPi NEO2](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO2)
 <!--more-->
