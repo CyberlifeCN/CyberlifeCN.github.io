@@ -315,4 +315,9 @@ firewall-cmd --reload
 
 Nextcloud 管理面板大致如下：
 {{< gallery "/imgs/nextcloud3.png" >}}
+
+## 参考
+* [Ubuntu 16.04 手动安装 NextCloud 12](https://www.getnas.com/2017/07/2655.html)
+* [源代码](https://github.com/nextcloud)
+* [安装包下载](https://download.nextcloud.com)
 <!--more-->
