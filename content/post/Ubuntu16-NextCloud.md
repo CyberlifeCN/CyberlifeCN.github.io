@@ -7,6 +7,8 @@ tags: ["linux"]
 banner: "imgs/nextcloud4.jpg"
 ---
 
+我在上周购买的 NanoPi Neo2 金甲套装上安装 NextCloud操作如下
+
 <!--more-->
 #1.更新软件列表
 ```
