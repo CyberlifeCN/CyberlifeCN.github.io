@@ -4,7 +4,7 @@ date: 2018-07-14T15:10:55+08:00
 url: "2018/07/14/Minio-Thumbor"
 categories: ["deploy"]
 tags: ["linux"]
-banner: "imgs/Minio-Thumbor.jpg"
+banner: "imgs/minio.jpg"
 ---
 
 多数应用系统都会用到图片存储，从系统架构角度来说，像图片存储这样的服务应该尽量从核心业务中剥离出来。很多人会选择在线云存储服务，比如七牛云存储之类的。但是很多企业项目因为各种需求，还是会要求图片服务部署在内部。所以我们还是可能会需要一个可独立部署的图片服务。
@@ -38,6 +38,7 @@ SQS ARNs:  <none>
 minio专注于文件存储，并没有什么图片处理功能，但是我们可以使用thumbor这个服务来做图片处理。
 
 # Thumbor
+{{< gallery "/imgs/thumbor.png" >}}
 Thumbor是一个非常强大的图片处理服务，可以实现图片裁剪、缩放、滤镜，甚至是人脸识别。
 
 它是一个基于Python的开源项目，在python环境下可以通过pip安装。
