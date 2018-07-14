@@ -19,16 +19,25 @@ banner: "imgs/ngrok-frp.jpg"
 wget https://github.com/fatedier/frp/releases/download/v0.20.0/frp_0.20.0_linux_386.tar.gz
 tar -xvf frp_0.20.0_linux_386.tar.gz
 cd frp_0.20.0_linux_386
+```
+修改 frps.ini 文件
+```
+[common]
+bind_port = 7000
+vhost_http_port = 80
+```
+启动
+```
 ./frps -c ./frps.ini
 ```
 注意：别忘记将公网主机的防火墙端口 6000 和 7000 打开
 
 ## 公网主机配置自启动
 
-新建启动脚本文件/etc/systemd/system/frp.service，内容如下：
+新建启动脚本文件 /etc/systemd/system/frps.service，内容如下：
 ```
 [Unit]
-Description=frp
+Description=frps
 [Service]
 TimeoutStartSec=0
 ExecStart=/home/thomas/frp_0.20.0_linux_386/frps -c /home/thomas/frp_0.20.0_linux_386/frps.ini
@@ -37,11 +46,11 @@ RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
-启动 frp 服务
+启动 frps 服务
 ```
-systemctl enable frp.service
-systemctl start frp.service
-systemctl status frp.service
+systemctl enable frps.service
+systemctl start frps.service
+systemctl status frps.service
 systemctl daemon-reload
 ```
 
@@ -51,7 +60,7 @@ wget https://github.com/fatedier/frp/releases/download/v0.20.0/frp_0.20.0_linux_
 tar -xvf frp_0.20.0_linux_386.tar.gz
 cd frp_0.20.0_linux_386
 ```
-修改 frpc.ini 文件，假设 frps 所在服务器的公网 IP 为 x.x.x.x；
+修改 frpc.ini 文件，假设 frps 所在服务器的公网 IP 为 x.x.x.x，域名为yourdomain.com；
 ```
 # frpc.ini
 [common]
@@ -63,6 +72,12 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 22
 remote_port = 6000
+
+[web]
+type = http
+local_ip = 127.0.0.1
+local_port = 80
+custom_domains = office.yourdomain.com
 ```
 启动
 ```
@@ -71,10 +86,10 @@ remote_port = 6000
 
 ## 内网主机配置自启动
 
-新建启动脚本文件/etc/systemd/system/frp.service，内容如下：
+新建启动脚本文件 /etc/systemd/system/frpc.service，内容如下：
 ```
 [Unit]
-Description=frp
+Description=frpc
 [Service]
 TimeoutStartSec=0
 ExecStart=/home/thomas/frp_0.20.0_linux_386/frpc -c /home/thomas/frp_0.20.0_linux_386/frpc.ini
@@ -85,9 +100,9 @@ WantedBy=multi-user.target
 ```
 启动 frp 服务
 ```
-systemctl enable frp.service
-systemctl start frp.service
-systemctl status frp.service
+systemctl enable frpc.service
+systemctl start frpc.service
+systemctl status frpc.service
 systemctl daemon-reload
 ```
 
