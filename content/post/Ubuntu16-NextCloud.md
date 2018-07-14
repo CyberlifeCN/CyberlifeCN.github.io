@@ -4,7 +4,7 @@ date: 2018-07-14T21:00:35+08:00
 url: "2018/07/14/ubuntu16-NextCloud"
 categories: ["deploy"]
 tags: ["linux"]
-banner: "nextcloud4.jpg"
+banner: "imgs/nextcloud4.jpg"
 ---
 
 <!--more-->
