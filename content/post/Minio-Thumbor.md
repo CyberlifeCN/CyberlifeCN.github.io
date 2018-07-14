@@ -111,7 +111,7 @@ systemctl daemon-reload
 Description=thumbor
 [Service]
 TimeoutStartSec=0
-ExecStart=thumbor --port=8888 --conf=/home/thomas/thumbor.conf
+ExecStart=/usr/bin/thumbor --port=8888 --conf=/home/thomas/thumbor.conf
 Restart=on-failure
 RestartSec=5s
 [Install]
