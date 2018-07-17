@@ -29,6 +29,7 @@ Olivier Cochard-Labbe在2005年创建了FreeNAS项目，后Volker Theile加入�
   - password = openmediavault
 
 ## 打开阻止root远程登录
+找个显示器、键盘登录树莓派，操作
 ```
   # vi /etc/ssh/sshd_config
   PermitRootLogin yes
@@ -48,6 +49,28 @@ listen [::]:80 ipv6only=off;
 
 注释掉：
 #listen [::]:80 ipv6only=off;
+```
+
+## 更新Debian软件源
+```
+cp /etc/apt/sources.list /etc/apt/sources.list_bak #备份一下软件源
+vi /etc/apt/sources.list
+
+# 163
+deb http://mirrors.163.com/debian/ stretch main
+deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
+deb http://httpredir.debian.org/debian stretch-backports main contrib non-free
+```
+
+## 挂载exFAT类型格式化后的USB设备
+```
+# debian apt-get update：public key 错误修复
+apt-get install debian-keyring debian-archive-keyring
+apt-get update
+apt-get install exfat-utils
+apt-get install exfat-fuse
 ```
 
 ## OpenMediaVault 包含以下重要特性：
