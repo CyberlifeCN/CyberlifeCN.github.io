@@ -18,7 +18,7 @@ sudo yum install epel-release
 sudo yum install terminator
 ```
 
-安装好Terminator软件后，我们可以在Ubuntu系统桌面的菜单“应用程序”→“附件”下找到“Terminator”项，单击该项可运行Terminator。另外，我们也可以直接在X-Window终端窗口中输入命令“terminator”来运行它。
+安装好Terminator软件后，我们可以在系统桌面的菜单“应用程序”→“附件”下找到“Terminator”项，单击该项可运行Terminator。另外，我们也可以直接在X-Window终端窗口中输入命令“terminator”来运行它。
 
 Terminator运行后，在当前桌面显示一个终端窗口，乍一看，与GNOME的终端窗口很相似，只不过标题栏显示为“Terminator”，且没有菜单栏，
 
