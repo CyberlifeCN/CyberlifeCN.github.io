@@ -14,13 +14,14 @@ banner: "imgs/git-repository.jpg"
 
 这样管理员可以在自己的机器上和 gitlab 系统交互。
 
-1. git clone 到本地
-2. 目标服务器先创建一个 git project
-3. 本地 git 关联新 git   
+## git clone 到本地
+## 目标服务器先创建一个 git project
+## 本地 git 关联新 git   
 ```
 git remote add new git@test.com:test/test.git
 ```
-4. push 到新 git
+
+## push 到新 git
 ```
 git push -u new --all
 git push -u new --tags
