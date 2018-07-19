@@ -77,27 +77,27 @@ webhookit -c config4hustcc.py
 * webhook 的 URL 地址；
 * webhook 的配置信息（隐藏私密信息）；
 
-### 6. 配置hugo自启动
+### 6. 配置webhook自启动
 
-新建启动脚本文件 /etc/systemd/system/hugo.service，内容如下：
+新建启动脚本文件 /etc/systemd/system/webhook.service，内容如下：
 ```
 [Unit]
-Description=hugo
+Description=webhook
 [Service]
 TimeoutStartSec=0
-WorkingDirectory=/home/thomas/go/src/CyberlifeCN.github.io
-ExecStart=/home/thomas/go/bin/hugo server --baseUrl=http://cyber-life.cn --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false --disableLiveReload=true
+WorkingDirectory=/home/thomas/webhook-configs
+ExecStart=/usr/bin/webhookit -c config4hustcc.py
 Restart=on-failure
 RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
-启动 hogo 服务
+启动 webhook 服务
 ```
 systemctl daemon-reload
-systemctl enable hugo.service
-systemctl start hugo.service
-systemctl status hugo.service
+systemctl enable webhook.service
+systemctl start webhook.service
+systemctl status webhook.service
 ```
 
 ## 最后一项工作，自动pull代码以及重启web服务
