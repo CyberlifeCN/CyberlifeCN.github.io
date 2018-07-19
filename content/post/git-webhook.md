@@ -77,7 +77,7 @@ webhookit -c config4hustcc.py
 * webhook 的 URL 地址；
 * webhook 的配置信息（隐藏私密信息）；
 
-### 6. 配置自启动
+### 6. 配置hugo自启动
 
 新建启动脚本文件 /etc/systemd/system/hugo.service，内容如下：
 ```
