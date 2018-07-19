@@ -94,4 +94,16 @@ linux 初始化时经常使用，总结一下！
     # vi /etc/sysconfig/network
     # vi /etc/hosts
 
+### 如何配置 sudo 命令在运行时而不输入密码
+```
+# vi /etc/sudoers
+root    ALL=(ALL)       ALL
+thomas  ALL=(ALL)       NOPASSWD: ALL
+```
+
+### 中文环境如何改成英文
+编辑 /etc/bashrc 环境文件，加入一行
+```
+export LC_ALL=en_US.UTF-8
+```  
 <!--more-->

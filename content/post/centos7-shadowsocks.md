@@ -52,11 +52,14 @@ Description=Shadowsocks
 [Service]
 TimeoutStartSec=0
 ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/shadowsocks.json
+Restart=on-failure
+RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
 ### 启动Shadowsocks服务
 ```
+systemctl daemon-reload
 systemctl enable shadowsocks.service
 systemctl start shadowsocks.service
 systemctl status shadowsocks.service
