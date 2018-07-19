@@ -55,7 +55,7 @@ WEBHOOKIT_CONFIGURE = {
         'PWD': '',  # user password or private key.
 
         # The webhook shell script path.
-        'SCRIPT': '/home/thomas/exec_hook_shell.sh'
+        'SCRIPT': '/home/thomas/bin/exec_hook_shell.sh'
     },
 	...],
 	...
@@ -79,10 +79,10 @@ webhookit -c config4hustcc.py
 
 ### 6. 配置自启动
 
-新建启动脚本文件 /etc/systemd/system/hogo.service，内容如下：
+新建启动脚本文件 /etc/systemd/system/hugo.service，内容如下：
 ```
 [Unit]
-Description=hogo
+Description=hugo
 [Service]
 TimeoutStartSec=0
 WorkingDirectory=/home/thomas/go/src/CyberlifeCN.github.io
@@ -95,9 +95,9 @@ WantedBy=multi-user.target
 启动 hogo 服务
 ```
 systemctl daemon-reload
-systemctl enable hogo.service
-systemctl start hogo.service
-systemctl status hogo.service
+systemctl enable hugo.service
+systemctl start hugo.service
+systemctl status hugo.service
 ```
 
 ## 最后一项工作，自动pull代码以及重启web服务
