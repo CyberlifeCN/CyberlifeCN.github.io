@@ -77,16 +77,7 @@ webhookit -c config4hustcc.py
 * webhook 的 URL 地址；
 * webhook 的配置信息（隐藏私密信息）；
 
-## 最后一项工作，自动pull代码以及重启web服务
-```
-vi exec_hook_shell.sh
-cd /home/thomas/go/src/CyberlifeCN.github.io
-git pull
-# restart golang hugo server
-sudo systemctl restart hogo.service
-```
-
-## 配置自启动
+### 6. 配置自启动
 
 新建启动脚本文件 /etc/systemd/system/hogo.service，内容如下：
 ```
@@ -107,6 +98,15 @@ systemctl daemon-reload
 systemctl enable hogo.service
 systemctl start hogo.service
 systemctl status hogo.service
+```
+
+## 最后一项工作，自动pull代码以及重启web服务
+```
+vi exec_hook_shell.sh
+cd /home/thomas/go/src/CyberlifeCN.github.io
+git pull
+# restart golang hugo server
+sudo systemctl restart hugo.service
 ```
 
 ### 主要参考资料：
