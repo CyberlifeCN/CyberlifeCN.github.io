@@ -83,9 +83,30 @@ vi exec_hook_shell.sh
 cd /home/thomas/go/src/CyberlifeCN.github.io
 git pull
 # restart golang hugo server
-pid=`ps -ef|grep hugo |grep -v grep| awk '{print $2;}'`
-kill $pid
-hugo server --baseUrl=http://cyber-life.cn/ --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false --disableLiveReload=true &
+sudo systemctl restart hogo.service
+```
+
+## 配置自启动
+
+新建启动脚本文件 /etc/systemd/system/hogo.service，内容如下：
+```
+[Unit]
+Description=hogo
+[Service]
+TimeoutStartSec=0
+WorkingDirectory=/home/thomas/go/src/CyberlifeCN.github.io
+ExecStart=/home/thomas/go/bin/hugo server --baseUrl=http://cyber-life.cn --theme=hugo-icarus-theme --buildDrafts --port=1313 --appendPort=false --disableLiveReload=true
+Restart=on-failure
+RestartSec=5s
+[Install]
+WantedBy=multi-user.target
+```
+启动 hogo 服务
+```
+systemctl daemon-reload
+systemctl enable hogo.service
+systemctl start hogo.service
+systemctl status hogo.service
 ```
 
 ### 主要参考资料：
