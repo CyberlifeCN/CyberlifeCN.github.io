@@ -26,12 +26,12 @@ dokuwiki最简单，可以实现分分钟快速搭建，界面漂亮，功能全
 * 代码高亮足够漂亮，还有更漂亮的console插件。
 
 ## 安装
-Step 0: Make sure your server meets the requirements.
-Step 1: Download the newest release from the Download Page.
-Step 2: Read the security page before you begin installing. Take it seriously. If in doubt, ask on the mailing list
-Step 3: Unpack the distribution tarball and upload/copy the files to your webspace.
-Step 4: Open the install.php file in your browser and follow the instructions. (For additional information, see the installer page.)
-Step 5: Enjoy your DokuWiki install and browse through the manual to discover what you can do with it.
+* Step 0: 确保运行环境符合要求，php5以上
+* Step 1: [下载最新版本](https://www.dokuwiki.org/download)
+* Step 2: 阅读授权文件
+* Step 3: 上传文件到服务器，解压缩到 /var/www/html/wiki 目录下.
+* Step 4: 在浏览中打开 http://localhost/wiki/install.php  (按照步骤执行)
+* Step 5: 开始 DokuWiki 之旅吧！
 
 * [DokuWiki官网](https://www.dokuwiki.org)
 <!--more-->

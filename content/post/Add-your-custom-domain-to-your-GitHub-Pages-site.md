@@ -3,7 +3,7 @@ title: "怎样将域名绑定到 github pages 博客上"
 date: 2017-12-10T19:39:57+08:00
 url: "2017/12/10/add-your-custom-domain-to-github-pages"
 categories: ["deploy"]
-tags: ["github"]
+tags: ["git"]
 ---
 
 我在阿里云上注册了一个新域名： cyber-life.cn，我已经在GitHub Pages上建立了自己的博客： https://CyberlifeCN.github.io/ 。现在我希望将 cyber-life.cn 映射到 https://CyberlifeCN.github.io/ 。
