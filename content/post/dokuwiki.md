@@ -33,5 +33,7 @@ dokuwiki最简单，可以实现分分钟快速搭建，界面漂亮，功能全
 * Step 4: 在浏览中打开 http://localhost/wiki/install.php  (按照步骤执行)
 * Step 5: 开始 DokuWiki 之旅吧！
 
+{{< gallery "/imgs/dokuwiki-template.png" >}}
+
 * [DokuWiki官网](https://www.dokuwiki.org)
 <!--more-->
