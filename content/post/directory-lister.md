@@ -11,28 +11,28 @@ banner: "imgs/directory-lister.png"
 
 <!--more-->
 
-## 环境要求
+# 环境要求
 
 Directory Lister 要求 PHP 5.3+ 版本以上. 更多关于 PHP 的信息, 可以参考 http://www.php.net.
 
-## 安装
+# 安装
 
-1. 下载和解压 Directory Lister
-2. 拷贝文件
+### 下载和解压 Directory Lister
+### 拷贝文件
 
 ```
 cp resources/default.config.php resources/config.php
 ```
 
-3. 将 index.php 文件和 resources 目录放置到您想要展示的目录下，例如我把它们放置到
+### 将 index.php 文件和 resources 目录放置到您想要展示的目录下，例如我把它们放置到
 
 ```
 mv index.php /var/www/html/nextcloud/data/thomas/files/sfw
 mv resources /var/www/html/nextcloud/data/thomas/files/sfw
 ```
 
-4. 之后上传文件到 index.php 所在目录下即可
-5. 为了在主站访问点直接访问到此网页，我加了一个软链接
+### 之后上传文件到 index.php 所在目录下即可
+### 为了在主站访问点直接访问到此网页，我加了一个软链接
 
 ```
 sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/index.php /var/www/html/index.php
@@ -40,7 +40,7 @@ sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/linux /var/www/html/lin
 sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/macos /var/www/html/macos
 ```
 
-6. 隐藏用户不应访问到目录，修改文件
+### 隐藏用户不应访问到目录，修改文件
 
 ```
 vi /var/www/html/nextcloud/data/thomas/files/sfw/resources/config.php
@@ -59,7 +59,8 @@ vi /var/www/html/nextcloud/data/thomas/files/sfw/resources/config.php
 ),
 ```
 
-7. 演示效果 http://home.cloudancing.cn
+### 演示效果
+http://home.cloudancing.cn
 
 * [directorylister官网](http://www.directorylister.com)
 * [5款简单实用的免费目录列表程序](http://www.laozuo.org/6300.html)
