@@ -3,7 +3,7 @@ title: "git 工程导入到新的 gitlab 服务器中"
 date: 2018-07-18T12:49:43+08:00
 url: "2018/07/18/git-transfer"
 categories: ["deploy"]
-tags: ["github"]
+tags: ["git"]
 banner: "imgs/git-repository.jpg"
 ---
 

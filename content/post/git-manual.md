@@ -3,7 +3,7 @@ title: "git - 实用手册"
 date: 2018-06-12T22:58:43+08:00
 url: "2018/06/12/git-manual"
 categories: ["deploy"]
-tags: ["github"]
+tags: ["git"]
 banner: "imgs/git-workflow.png"
 ---
 

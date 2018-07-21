@@ -3,7 +3,7 @@ title: "Restful API 测试工具"
 date: 2018-06-20T10:07:35+08:00
 url: "2018/06/20/api-test-tools"
 categories: ["deploy"]
-tags: ["linux"]
+tags: ["linux","api"]
 banner: "imgs/RestAssuredAPITesting.jpg"
 ---
 

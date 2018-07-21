@@ -3,7 +3,7 @@ title: "git - webhook自动部署"
 date: 2018-06-13T01:23:52+08:00
 url: "2018/06/13/git-webhook"
 categories: ["deploy"]
-tags: ["github"]
+tags: ["git"]
 banner: "imgs/git-hooks.jpg"
 ---
 

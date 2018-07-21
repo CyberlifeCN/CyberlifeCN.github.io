@@ -3,7 +3,7 @@ title: "利用 Directory Lister 搭建简单实用的目录列表"
 date: 2018-07-21T15:52:55+08:00
 url: "2018/07/21/directory-lister"
 categories: ["deploy"]
-tags: ["linux","翻墙"]
+tags: ["linux","php"]
 banner: "imgs/directory-lister.png"
 ---
 
@@ -35,32 +35,11 @@ mv resources /var/www/html/nextcloud/data/thomas/files/sfw
 ### 为了在主站访问点直接访问到此网页，我加了一个软链接
 
 ```
-sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/index.php /var/www/html/index.php
-sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/linux /var/www/html/linux
-sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw/macos /var/www/html/macos
-```
-
-### 隐藏用户不应访问到目录，修改文件
-
-```
-vi /var/www/html/nextcloud/data/thomas/files/sfw/resources/config.php
-// Hidden files
-'hidden_files' => array(
-    '.ht*',
-    '*/.ht*',
-    'resources',
-    'resources/*',
-    'analytics.inc',
-    'header.php',
-    'footer.php',
-    'index.html.bak',
-    'nextcloud',
-    'nextcloud/*'
-),
+sudo ln -s /var/www/html/nextcloud/data/thomas/files/sfw /var/www/html/sfw
 ```
 
 ### 演示效果
-http://home.cloudancing.cn
+http://home.cloudancing.cn/sfw
 
 * [directorylister官网](http://www.directorylister.com)
 * [5款简单实用的免费目录列表程序](http://www.laozuo.org/6300.html)

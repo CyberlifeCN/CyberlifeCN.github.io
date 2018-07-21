@@ -3,7 +3,7 @@ title: "Ubuntu 16 下安装 NextCloud 及配置"
 date: 2018-07-14T21:00:35+08:00
 url: "2018/07/14/ubuntu16-NextCloud"
 categories: ["deploy"]
-tags: ["linux"]
+tags: ["linux","php"]
 banner: "imgs/nextcloud4.jpg"
 ---
 
