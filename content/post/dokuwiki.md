@@ -4,7 +4,7 @@ date: 2018-07-21T19:04:55+08:00
 url: "2018/07/21/dokuwiki"
 categories: ["deploy"]
 tags: ["linux","php"]
-banner: "imgs/dokuwiki.jpg"
+banner: "imgs/dokuwiki-template.png"
 ---
 
 技术团队要搭建一个文档网站，对比了好多开源的 wiki 软件.
@@ -33,7 +33,7 @@ dokuwiki最简单，可以实现分分钟快速搭建，界面漂亮，功能全
 * Step 4: 在浏览中打开 http://localhost/wiki/install.php  (按照步骤执行)
 * Step 5: 开始 DokuWiki 之旅吧！
 
-{{< gallery "/imgs/dokuwiki-template.png" >}}
+{{< gallery "/imgs/dokuwiki.jpg" >}}
 
 * [DokuWiki官网](https://www.dokuwiki.org)
 <!--more-->
