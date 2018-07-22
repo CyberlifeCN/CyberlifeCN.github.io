@@ -4,7 +4,7 @@ date: 2018-07-23T03:47:55+08:00
 url: "2018/07/23/mongodb-studio3t"
 categories: ["数据库"]
 tags: ["mongodb"]
-banner: "imgs/mongodb-studio3t-robo3t.jpg"
+banner: "imgs/mongodb-studio3t-robo3t.png"
 ---
 
 这两天一直在导入、导出 Mongodb 的数据，字符界面使用起来非常费劲。
@@ -33,5 +33,8 @@ Robo 3T (formerly Robomongo) is the free lightweight GUI for MongoDB enthusiasts
 
 {{< gallery "/imgs/studio3t-logo.png" >}}
 {{< gallery "/imgs/studio3t.png" >}}
+
+* [Robo 3T 官网](https://robomongo.org)
+* [Studio 3T 官网](https://studio3t.com)
 
 <!--more-->
