@@ -15,7 +15,7 @@ $$ CouchBase = Memcached + Mysql + MongoDB $$
 ## 下载 CouchBase
 进入[官方网站](https://www.couchbase.com)，找到下载链接。里面可以选择不同的版本 社区版 / 商业版，选择社区版，选择Mac的社区版。
 
-## 安装 CouchBase
+## 在 Mac OS 下安装 CouchBase
 将下载的文件解压得到app文件，拖入到应用程序即可。点击应用里的Couchbase直接运行。
 如果之前安装了 CouchBase Server，请执行
 ```
@@ -23,9 +23,14 @@ rm -rf ~/Library/Application\ Support/Couchbase
 rm -rf ~/Library/Application\ Support/Membase
 ```
 
+## 在 CentOS 下安装 CouchBase
+```
+rpm -ivh couchbase-server-community-5.1.1-centos7.x86_64.rpm
+```
+
 ## 访问 CouchBase UI
-我们搭建的是本地环境没有集群，所以访问http://localhost:8091/即可看到我们的CouchBase信息。
-系统默认用户名/密码
+我们搭建的是本地环境没有集群，所以访问 http://localhost:8091/ 即可进入的CouchBase系统，
+默认用户名/密码
 ```
 Username: Administrator
 Password: password.
