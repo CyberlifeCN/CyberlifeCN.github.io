@@ -2,8 +2,8 @@
 title: "CouchBase 安装篇"
 date: 2018-07-26T10:19:55+08:00
 url: "2018/07/26/couchbase-install"
-categories: ["deploy"]
-tags: ["linux","数据库"]
+categories: ["数据库"]
+tags: ["linux"]
 banner: "imgs/couchbase.jpg"
 ---
 
