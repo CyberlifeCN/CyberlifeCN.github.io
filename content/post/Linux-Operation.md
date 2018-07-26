@@ -30,14 +30,8 @@ $ scp thomas@hostname:remote_filename .
     在远程主机生成密匙
     $ ssh-keygen -t rsa
 
-    把本机的密匙修改为：
-    $ cp id_rsa.pub authorized_keys
-
-    把本机密匙复制到远程主机
-    $ scp authorized_keys thomas@siriusa
-
-    把authorized_keys文件移动到正确的目录下
-    $ mv authorized_keys .ssh
+    用ssh-copy-id 把公钥复制到远程主机上
+    $ ssh-copy-id -i ~/.ssh/id_rsa.pub thomas@192.168.0.3
 
 ### 4.安装java
 ```
