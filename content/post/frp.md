@@ -84,6 +84,30 @@ custom_domains = office.yourdomain.com
 ./frpc -c ./frpc.ini
 ```
 
+## 提供 VNC 服务的内网主机配置
+```
+# frpc.ini
+[vnc-server]
+type = stcp
+sk=RCPBxbuUWAdtMUXXZ3HvaHHX
+local_ip = 127.0.0.1
+local_port = 5901
+```
+
+## 使用 VNC 客户端内网主机配置
+```
+# frpc.ini
+[vnc-client]
+type = stcp
+sk=RCPBxbuUWAdtMUXXZ3HvaHHX
+role = visitor
+server_name = vnc-server
+bind_addr = 127.0.0.1
+bind_port = 6007
+```
+
+使用 NVC 客户端时配置链接 127.0.0.1:6007
+
 ## 内网主机配置自启动
 
 新建启动脚本文件 /etc/systemd/system/frpc.service，内容如下：
@@ -106,7 +130,7 @@ systemctl status frpc.service
 systemctl daemon-reload
 ```
 
-## 外网主机使用
+## 访问外网主机使用
 通过 ssh 访问内网机器，假设用户名为 test
 ```
 ssh -oPort=6000 test@x.x.x.x
