@@ -3,7 +3,7 @@ title: "Mac OS 安装开源 CMS - Drupal"
 date: 2018-08-03T09:44:55+08:00
 url: "2018/08/03/macos-drupal"
 categories: ["deploy"]
-tags: ["linux","php"]
+tags: ["MacOS","php"]
 banner: "imgs/drupal.jpeg"
 ---
 
