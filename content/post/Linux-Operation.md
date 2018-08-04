@@ -30,6 +30,9 @@ $ scp thomas@hostname:remote_filename .
     在远程主机生成密匙
     $ ssh-keygen -t rsa
 
+    把远程主机的密匙修改为：
+    $ cp id_rsa.pub authorized_keys
+
     用ssh-copy-id 把公钥复制到远程主机上
     $ ssh-copy-id -i ~/.ssh/id_rsa.pub thomas@192.168.0.3
 
