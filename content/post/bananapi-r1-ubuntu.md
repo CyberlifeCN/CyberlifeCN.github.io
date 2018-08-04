@@ -1,5 +1,5 @@
 ---
-title: "香蕉派 BPI-R1 开源智能路由器"
+title: "香蕉派 BPI-R1 开源智能路由器 安装ubuntu"
 date: 2018-08-04T20:54:35+08:00
 url: "2018/08/04/bananapi-r1-ubuntu"
 categories: ["deploy"]
