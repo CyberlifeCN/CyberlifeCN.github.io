@@ -65,16 +65,19 @@ tmpfs            88M   24K   88M   1% /run/user/1000
 
 ## 安装 VNC
 
-1. 安装 VNC 服务器
+安装 VNC 服务器
 ```
 sudo apt-get install tightvncserver
 ```
-2. 启动 VNC 服务器并设置密码
+
+启动 VNC 服务器并设置密码
 ```
 vncserver
 ```
+
 输入6位密码，已经要记得哟。默认端口是 5901.
-3. 配置 .vnc/xstartup 脚本
+
+配置 .vnc/xstartup 脚本
 ```
 sudo vi /home/pi/.vnc/xstartup
 ```
