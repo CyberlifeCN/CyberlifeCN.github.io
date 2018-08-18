@@ -3,7 +3,7 @@ title: "基于 Minio 和 Thumbor 搭建独立图片服务"
 date: 2018-07-14T15:10:55+08:00
 url: "2018/07/14/Minio-Thumbor"
 categories: ["deploy"]
-tags: ["linux"]
+tags: ["linux","golang"]
 banner: "imgs/minio.jpg"
 ---
 

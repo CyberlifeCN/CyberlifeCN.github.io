@@ -3,7 +3,7 @@ title: "CentOS 7 安装 Nextcloud"
 date: 2018-07-05T21:21:55+08:00
 url: "2018/07/05/centos7-nextcloud"
 categories: ["deploy"]
-tags: ["linux","php"]
+tags: ["linux","php","云盘"]
 banner: "imgs/nextcloud.jpg"
 ---
 

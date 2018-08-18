@@ -3,7 +3,7 @@ title: "OpenMediaVault 4 for Raspberry Pi 2B, 3B and 3B+"
 date: 2018-06-30T22:10:55+08:00
 url: "2018/06/30/OpenMediaVault"
 categories: ["deploy"]
-tags: ["linux","树莓派","php"]
+tags: ["linux","树莓派","php","云盘"]
 banner: "imgs/openmediavault.png"
 ---
 
