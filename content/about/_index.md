@@ -5,6 +5,8 @@ menu = "main"
 disable_comments = true
 +++
 
+{{< gallery "/imgs/thomas.png" >}}
+
 为早期的互联网创业团队提供咨询服务，包括技术咨询和管理咨询。
 
 * 二十年的IT从业经历。
