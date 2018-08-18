@@ -2,7 +2,6 @@
 title: "使用Syncthing同步你的文件"
 date: 2018-08-18T14:41:50+08:00
 url: "2018/08/18/syncthing"
-description: "linux 运维中常用命令总结"
 tags: ["linux", "Syncthing"]
 categories: ["deploy"]
 banner: "imgs/syncthing.png"
