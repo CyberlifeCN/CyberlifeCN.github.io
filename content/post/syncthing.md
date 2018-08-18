@@ -89,7 +89,12 @@ sudo systemctl status syncthing@${USER}.service
     设置主路径所在分区允许的最低可用磁盘空间，若剩余空间小于该百分比，则中止同步
 - API Key
     显示当前的RestAPI的Key，可随机生成新Key
-- 
+- 匿名使用报告
+    是否向syncthing官方发送统计信息
+- 自动升级
+    默认仅升级到stable版本
+- 默认文件夹路径
+    默认情况下，共享文件夹时会创建在用户家目录下，可修改此配置更换目录位置。
 
 ### 5.2. UI设置
 {{< gallery "/imgs/syncthing-setting-2.png" >}}
@@ -100,12 +105,6 @@ sudo systemctl status syncthing@${USER}.service
     设置界面的准入密码，防止被盗用
 - 主题选择
     现在支持Default、Dark、Black三种主题
-- 匿名使用报告
-    是否向syncthing官方发送统计信息
-- 自动升级
-    默认仅升级到stable版本
-- 默认文件夹路径
-    默认情况下，共享文件夹时会创建在用户家目录下，可修改此配置更换目录位置。
 
 ### 5.3. 连接设置
 {{< gallery "/imgs/syncthing-setting-3.png" >}}
