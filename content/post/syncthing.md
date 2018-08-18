@@ -1,5 +1,5 @@
 ---
-title: "使用Syncthing同步你的文件"
+title: "Syncthing - 免费开源替代 Resilio / BT Sync 的文件夹同步工具神器 (搭建同步网盘)"
 date: 2018-08-18T14:41:50+08:00
 url: "2018/08/18/syncthing"
 tags: ["linux", "golang", "树莓派", "云盘"]
