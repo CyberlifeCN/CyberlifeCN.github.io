@@ -4,12 +4,24 @@ date: 2018-08-18T14:41:50+08:00
 url: "2018/08/18/syncthing"
 tags: ["linux", "Syncthing"]
 categories: ["deploy"]
-banner: "imgs/syncthing.png"
+banner: "imgs/syncthing.jpg"
 ---
 
 在公司写了一天的文档，就差一点儿了，回家继续写吧。这个时候很多人都会使用U盘将文档拷贝一份，或者使用电子邮件发送给自己。这时如果可以直接将文件同步回你家里的电脑，那么一切都会变得十分方便。
 
 <!--more-->
+
+自建网盘云储存同步服务的软件有很多，Seafile、NextCloud、ownCloud、BT Sync (Resilio Sync) 等。而 Syncthing 则有着自己非常特别的优点，受到众多高手们的推荐，被誉为是 Resilio Sync / BT Sync 和 Dropbox 的最佳开源替代品。
+
+Syncthing 最大的特色是采用了与 Resilio Sync (BitTorrent Sync) 类似的 P2P 分布式技术，无需中心服务器，即可让多台设备互相实时同步文件，用过 Resilio Sync 的朋友都明白这种同步方式的优势了。它们两者的实现方式很相似，区别是 Resilio 属于商业软件，需付费使用，在国内也已被墙，而 Syncthing 不仅完全免费且开源，相比 Resilio 还增加了「文件版本控制」、「单向同步」等堪称杀手级的功能特性。
+
+Syncthing 功能上非常接近于  Resilio Sync / BT Sync，不过说它是一款用于搭建网盘的服务器软件或者云存储服务应用似乎并不十分恰当，相较于 Seafile、NextCloud 等服务器工具，Syncthing 实际上更像是一款文件/文件夹同步工具。
+
+Syncthing 免费且开源，跨平台支持 Windows、Mac、Linux、Android 等主流平台，除了 PC、手机以外，在部分路由器、树莓派等硬件上都能轻松运行，它将以网页版的形式呈现，并且 Syncthing 还提供了中文界面的支持。
+
+得益于跨平台，Syncthing 的应用场景和范围非常广泛，可以简单用来备份手机照片视频文档，也可以满足公司、企业、团队、个人的各种复杂的文件/文件夹的同步与共享需求。
+
+比较可惜的是，目前 Syncthing 仅有安卓版的官方客户端，并未发布 iOS 版，只有一个由第三方做的相对简陋的 iOS APP 「fsync」可以暂时顶替。
 
 <!-- TOC -->
 
