@@ -36,6 +36,10 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 * 登录 OpenMediaVault 后的首页，让我们开始 NAS之旅吧:
 {{< gallery "/imgs/Omv_version411.jpg" >}}
 
+## 系统维护
+* ssh root@192.168.1.x
+    默认用户名: root
+    默认密码: fa
 
 ## 参考
 * [NanoPi NEO2](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO2/zh)
