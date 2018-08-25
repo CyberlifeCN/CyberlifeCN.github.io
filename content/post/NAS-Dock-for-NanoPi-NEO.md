@@ -33,7 +33,7 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 * http://192.168.1.x
     默认用户名: admin
     默认密码: openmediavault
-* 登录 OpenMediaVault 后首页:
+* 登录 OpenMediaVault 后的首页，让我们开始 NAS之旅吧:
 {{< gallery "/imgs/Omv_version411.jpg" >}}
 
 
