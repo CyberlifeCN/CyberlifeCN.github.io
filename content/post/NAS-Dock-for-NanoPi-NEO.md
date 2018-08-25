@@ -21,6 +21,12 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 ## 铝合金外壳
 {{< gallery "/imgs/Step1-v1.2.jpg" >}}
 
+## 下载 OpenMediaVault
+* [nanopi-neo2_debian-nas-jessie_4.x.y_YYYYMMDD.img.zip](https://www.mediafire.com/folder/ah4i6w029912b/NanoPi-NEO2)
+
+## 烧录镜像 TF Card
+* 解压缩 nanopi-neoN_debian-nas-jessie_4.x.y_YYYYMMDD.img.zip
+* 使用 Etcher 烧录镜像到 SD 卡
 
 ## 参考
 * [NanoPi NEO2](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO2/zh)
