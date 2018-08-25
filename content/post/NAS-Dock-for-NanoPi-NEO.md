@@ -16,9 +16,11 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 2. Screw set;
 3. 2.5寸 SATA接口的硬盘;
 4. NanoPi NEO2(1GB内存) 带散热片
+5. 16GB 的 TF卡
+6. 9v12v1.2A变压器
 {{< gallery "/imgs/Step0-v1.2.jpeg" >}}
 
-## 铝合金外壳
+## 铝合金外壳 154*100*47.5mm 414g
 {{< gallery "/imgs/Step1-v1.2.jpg" >}}
 
 ## 下载 OpenMediaVault
