@@ -28,6 +28,15 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 * 解压缩 nanopi-neoN_debian-nas-jessie_4.x.y_YYYYMMDD.img.zip
 * 使用 Etcher 烧录镜像到 SD 卡
 
+## 配置 NAS
+* 使用 SuperScan 扫描您的网络中新增节点，找到的新增 IP地址就是您的 NAS的访问IP
+* http://192.168.1.x
+    默认用户名: admin
+    默认密码: openmediavault
+* 登录 OpenMediaVault 后首页:
+{{< gallery "/imgs/Omv_version411.jpg" >}}
+
+
 ## 参考
 * [NanoPi NEO2](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO2/zh)
 * [友善出品NAS网络存储服务器](https://item.taobao.com/item.htm?id=548007605979)
