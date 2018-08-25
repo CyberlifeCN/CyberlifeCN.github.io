@@ -25,6 +25,7 @@ cd frp_0.20.0_linux_386
 [common]
 bind_port = 7000
 vhost_http_port = 80
+vhost_https_port = 443
 ```
 启动
 ```
@@ -77,11 +78,39 @@ remote_port = 6000
 type = http
 local_ip = 127.0.0.1
 local_port = 80
-custom_domains = office.yourdomain.com
+custom_domains = o2.yourdomain.com
+
+[webs]
+type = https
+local_ip = 127.0.0.1
+local_port = 443
+custom_domains = o2.cloudancing.cn
 ```
 启动
 ```
 ./frpc -c ./frpc.ini
+```
+
+## 内网主机配置自启动
+
+新建启动脚本文件 /etc/systemd/system/frpc.service，内容如下：
+```
+[Unit]
+Description=frpc
+[Service]
+TimeoutStartSec=0
+ExecStart=/home/thomas/frp_0.20.0_linux_386/frpc -c /home/thomas/frp_0.20.0_linux_386/frpc.ini
+Restart=on-failure
+RestartSec=5s
+[Install]
+WantedBy=multi-user.target
+```
+启动 frp 服务
+```
+systemctl enable frpc.service
+systemctl start frpc.service
+systemctl status frpc.service
+systemctl daemon-reload
 ```
 
 ## 提供 VNC 服务的内网主机配置
@@ -107,28 +136,6 @@ bind_port = 6007
 ```
 
 使用 NVC 客户端时配置链接 127.0.0.1:6007
-
-## 内网主机配置自启动
-
-新建启动脚本文件 /etc/systemd/system/frpc.service，内容如下：
-```
-[Unit]
-Description=frpc
-[Service]
-TimeoutStartSec=0
-ExecStart=/home/thomas/frp_0.20.0_linux_386/frpc -c /home/thomas/frp_0.20.0_linux_386/frpc.ini
-Restart=on-failure
-RestartSec=5s
-[Install]
-WantedBy=multi-user.target
-```
-启动 frp 服务
-```
-systemctl enable frpc.service
-systemctl start frpc.service
-systemctl status frpc.service
-systemctl daemon-reload
-```
 
 ## 访问外网主机使用
 通过 ssh 访问内网机器，假设用户名为 test
