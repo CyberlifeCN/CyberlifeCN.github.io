@@ -12,10 +12,10 @@ banner: "imgs/1-bay-NAS-Dock.jpeg"
 <!--more-->
 
 ## 硬件配置
-(1) 1-bay NAS Dock v1.2 for NanoPi NEO/NEO2;
-(2) Screw set;
-(3) 2.5" HDD hard disk;
-(4) NanoPi NEO/NEO2 with heat sink
+1. NAS Dock v1.2 支持 NanoPi NEO/NEO2;
+2. Screw set;
+3. 2.5寸 SATA接口的硬盘;
+4. NanoPi NEO2(1GB内存) 带散热片
 {{< gallery "/imgs/Step0-v1.2.jpeg" >}}
 
 ## 铝合金外壳
