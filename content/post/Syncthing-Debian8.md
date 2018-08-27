@@ -30,6 +30,19 @@ sudo apt-get update
 sudo apt-get install syncthing
 ```
 
+## 修改配置文件，让外网访问
+默认值是<address>127.0.0.1:8384</address>，只能在本机访问，修改如下：
+```
+vi /home/syncthing/.config/syncthing/
+<gui enabled="true" tls="false" debugging="false">
+     <address>0.0.0.0:8384</address>
+     <user>admin</user>
+     <password>$2a$10$uvQjlZyoCQYiQ.fP85EGCO1pLLghFI3qGti9KWVvVyyWyYfqJCMAG</password>
+     <apikey>rQaDYe6DhcopaYP5vnFuMpnJQ4PwTzeP</apikey>
+     <theme>default</theme>
+</gui>
+```
+
 ## Using Systemd to Set Up Syncthing as a System Service
 
 Since we are installing Syncthing on a server, we set up Syncthing as a system service to ensure that Syncthing is run at startup even without an active user session.
@@ -100,6 +113,12 @@ sudo systemctl reload nginx
 ```
 After you point your domain name to the IP address of Debian 8 server, type your domain name in the browser address bar and you should see the Syncthing Web interface.
 {{< gallery "/imgs/syncthing-web-interface.png" >}}
+
+# 添加一个访问 UI 的密码吧
+```
+用户名: admin
+密码: syncthing
+```
 
 ## 参考
 * [How to Install Syncthing on Debian 8 Server to Back Up Website](https://www.linuxbabe.com/backup/install-syncthing-debian-8-server-back-up-website)
