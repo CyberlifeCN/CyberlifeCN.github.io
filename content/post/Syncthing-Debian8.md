@@ -3,7 +3,7 @@ title: "Syncthing-Debian8"
 date: 2018-08-26T11:01:55+08:00
 url: "2018/08/26/Syncthing-Debian8"
 categories: ["deploy"]
-tags: ["linux","树莓派"]
+tags: ["linux","树莓派","golang"]
 banner: "imgs/syncthing.jpeg"
 ---
 
