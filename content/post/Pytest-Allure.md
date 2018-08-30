@@ -189,10 +189,14 @@ $ py.test test/ --allure_features='购物车功能' --allure_stories='加入购�
 ```
 
 ### 生成测试报告
+```
 allure generate ./result/ -o ./report/ --clean
+```
 
 ### 查看测试报告
+```
 用浏览器打开 ./report/index.html
+```
 
 ### 安装Allure
 ```
