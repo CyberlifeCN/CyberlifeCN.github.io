@@ -209,7 +209,7 @@ ln -s /home/thomas/sfw/allure-2.7.0/bin/allure ~/bin/allure
 打开生成的测试报告后，浏览器被自动调起，展示测试报告。下面我们分别看看测试报告的几个页面。
 
 1.    首页
-{{< gallery "/imgs/allure-01.png" >}}
+{{< gallery "/imgs/allure-001.png" >}}
 首页中展示了本次测试的测试用例数量，成功用例、失败用例、跳过用例的比例，测试环境信息，SUITES，FEATURES BY STORIES等基本信息，当与Jenkins做了持续置成后，TREND区域还将显示，历次测试的通过情况。
 
 首页的左边栏，还从不同的维度展示测试报告的其他信息，大家可以自己点进去看看。
