@@ -4,7 +4,7 @@ date: 2018-08-30T15:10:55+08:00
 url: "2018/08/30/Pytest-Allure"
 categories: ["programming"]
 tags: ["python","测试"]
-banner: "imgs/Pytest-Allure.jpeg"
+banner: "imgs/allure.png"
 ---
 
 Allure是一款非常轻量级并且非常灵活的开源测试报告生成框架。
@@ -205,24 +205,25 @@ ln -s /home/thomas/sfw/allure-2.7.0/bin/allure ~/bin/allure
 打开生成的测试报告后，浏览器被自动调起，展示测试报告。下面我们分别看看测试报告的几个页面。
 
 1.    首页
-    这里写图片描述
-    首页中展示了本次测试的测试用例数量，成功用例、失败用例、跳过用例的比例，测试环境信息，SUITES，FEATURES BY STORIES等基本信息，当与Jenkins做了持续置成后，TREND区域还将显示，历次测试的通过情况。
-    首页的左边栏，还从不同的维度展示测试报告的其他信息，大家可以自己点进去看看。
+{{< gallery "/imgs/allure-01.png" >}}
+首页中展示了本次测试的测试用例数量，成功用例、失败用例、跳过用例的比例，测试环境信息，SUITES，FEATURES BY STORIES等基本信息，当与Jenkins做了持续置成后，TREND区域还将显示，历次测试的通过情况。
+
+首页的左边栏，还从不同的维度展示测试报告的其他信息，大家可以自己点进去看看。
 
 2.    Behaviors
-    接下来，我们点击一下FEATURES BY STORIES，将进入Behaviors页面，这个页面按照FEATURES和 STORIES展示测试用例的执行结果：
-    这里写图片描述
-    从这个页面可以看到“购物车功能”这个FEATURES包含的三个STORIES的测试用例执行情况。
+接下来，我们点击一下FEATURES BY STORIES，将进入Behaviors页面，这个页面按照FEATURES和 STORIES展示测试用例的执行结果：
+{{< gallery "/imgs/allure-02.png" >}}
+从这个页面可以看到“购物车功能”这个FEATURES包含的三个STORIES的测试用例执行情况。
 
 3.    Suites
-    Allure测试报告将每一个测试脚本，作为一个Suite。在首页点击Suites区域下面的任何一条Suite，都将进入Suites页面。
-    这里写图片描述
-    这个页面，将脚本的目录结果展示本次所有的测试用例执行情况。
+Allure测试报告将每一个测试脚本，作为一个Suite。在首页点击Suites区域下面的任何一条Suite，都将进入Suites页面。
+{{< gallery "/imgs/allure-03.png" >}}
+这个页面，将脚本的目录结果展示本次所有的测试用例执行情况。
 
 4.    测试用例页面
-    在Suites页面上点击任何一条测试用例，Suites页面的右侧将展示这条用例的详细执行情况。
-    这里写图片描述
-    从这个页面可以看到测试用例执行的每一个步骤，以及每个步骤的执行结果。测试用例为什么失败，这里一目了然。
+在Suites页面上点击任何一条测试用例，Suites页面的右侧将展示这条用例的详细执行情况。
+{{< gallery "/imgs/allure-04.png" >}}
+从这个页面可以看到测试用例执行的每一个步骤，以及每个步骤的执行结果。测试用例为什么失败，这里一目了然。
 
 
 <!--more-->
