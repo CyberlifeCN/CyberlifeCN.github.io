@@ -216,17 +216,17 @@ ln -s /home/thomas/sfw/allure-2.7.0/bin/allure ~/bin/allure
 
 2.    Behaviors
 接下来，我们点击一下FEATURES BY STORIES，将进入Behaviors页面，这个页面按照FEATURES和 STORIES展示测试用例的执行结果：
-{{< gallery "/imgs/allure-02.png" >}}
+{{< gallery "/imgs/allure-002.png" >}}
 从这个页面可以看到“购物车功能”这个FEATURES包含的三个STORIES的测试用例执行情况。
 
 3.    Suites
 Allure测试报告将每一个测试脚本，作为一个Suite。在首页点击Suites区域下面的任何一条Suite，都将进入Suites页面。
-{{< gallery "/imgs/allure-03.png" >}}
+{{< gallery "/imgs/allure-003.png" >}}
 这个页面，将脚本的目录结果展示本次所有的测试用例执行情况。
 
 4.    测试用例页面
 在Suites页面上点击任何一条测试用例，Suites页面的右侧将展示这条用例的详细执行情况。
-{{< gallery "/imgs/allure-04.png" >}}
+{{< gallery "/imgs/allure-004.png" >}}
 从这个页面可以看到测试用例执行的每一个步骤，以及每个步骤的执行结果。测试用例为什么失败，这里一目了然。
 
 
