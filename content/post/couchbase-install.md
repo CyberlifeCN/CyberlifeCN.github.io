@@ -166,4 +166,5 @@ res.value
 * [Installing on Mac OS X](https://developer.couchbase.com/documentation/server/current/install/macos-install.html)
 * [Couchbase 中的分布式储存](http://blog.jiguang.cn/couchbase_distributed_storage/)
 * [ntroduction to Couchbase Server](http://docs.couchbase.com/couchbase-manual-2.2/#map-functions)
+* [千万级海量测试数据运算下，Redis VS Couchbase性能大揭秘](http://rdc.hundsun.com/portal/article/761.html)
 <!--more-->
