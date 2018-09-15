@@ -129,4 +129,9 @@ RebornDB使用reborn-agent来提供HA解决方案。
 
 reborn-agent每时每刻都在检查它启动的应用是否是活动的，如果reborn-agent发现一个应用挂掉了，它会重新启动这个应用。
 
+## 参考
+* [SSDB 分布式的一些想法](http://www.ideawu.net/blog/archives/838.html)
+* [RebornDB：下一代分布式Key-Value数据库](https://www.csdn.net/article/2015-07-13/2825186)
+* [reborndb](https://github.com/reborndb)
+
 <!--more-->
