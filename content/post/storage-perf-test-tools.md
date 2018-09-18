@@ -39,4 +39,8 @@ banner: "imgs/storage-perf-test.jpg"
 [fio](http://freshmeat.sourceforge.net/projects/fio)：功能强大，方便易用，但是纯命令行的。目前使用fio的公司和个人非常多。
 
 [iozone](http://www.iozone.org)：Iozone Filesystem Benchmark
+
+[bonnie++](http://www.textuality.com/bonnie/)
+
+[Intel NAS Performance Toolkit](http://www.intel.com/products/server/storage/NAS_Perf_Toolkit.htm)
 <!--more-->
