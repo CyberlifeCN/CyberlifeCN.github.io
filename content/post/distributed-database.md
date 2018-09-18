@@ -82,7 +82,7 @@ SSDB是一个快速的用来存储十亿级别列表数据的开源NoSql数据�
 
 1. 兼容Redis：如果你对 Redis很熟悉，你就能轻松使用QDB，它支持大多数的Redis命令和数据结构（String、Hash、List、Set、Sorted Set等）；
 2. 将数据保存在磁盘：（超越内存大小限制）可以将热点数据在内存中保存，利用了后端存储；
-3. 支持多种后端存储：你可以选择 RocksDB、LevelDB 或者 GoLevelDB（稍后，我们将用RocksDBs作为例子讲解）；
+3. 支持多种后端存储：你可以选择 RocksDB、LevelDB 或者 GoLevelDB；
 4. 和Redis双向同步：我们可以作为一个从节点从 Redis同步数据，也可以作为一个主节点复制数据到Redis。
 
 ## RebornDB：下一代分布式Key-Value数据库
