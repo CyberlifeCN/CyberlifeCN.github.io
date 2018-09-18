@@ -2,7 +2,7 @@
 title: "分布式Key-Value数据库设计参考"
 date: 2018-09-15T11:39:35+08:00
 url: "2018/09/15/distributed-kv-database"
-categories: ["数据库","programming","架构"]
+categories: ["数据库","programming","architecture"]
 tags: ["linux","go"]
 banner: "imgs/ddb.jpg"
 ---
