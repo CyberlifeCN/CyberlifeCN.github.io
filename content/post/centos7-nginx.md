@@ -97,4 +97,26 @@ server {
 }
 ```
 
+## 常见问题
+
+### nginx 日志输出到了哪里
+看nginx配置，/etc/nginx/nginx.conf
+```
+error_log /var/log/nginx/error.log;
+access_log  /var/log/nginx/access.log  main;
+```
+
+### Permission denied
+输出如下错误
+```
+[alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13:Permission denied)
+```
+解决办法
+```
+chmod -R 755 /var/log/nginx
+```
+或
+```
+setenfore 0
+```
 <!--more-->
