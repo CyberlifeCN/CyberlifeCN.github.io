@@ -117,6 +117,12 @@ chmod -R 755 /var/log/nginx
 ```
 或
 ```
+# 临时关闭 SELinux
 setenfore 0
+
+# 永久关闭
+vi /etc/selinux/config
+注释掉 # SELINUX=enforcing
+修改为 SELINUX=disabled
 ```
 <!--more-->
