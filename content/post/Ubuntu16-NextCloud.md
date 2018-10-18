@@ -13,6 +13,7 @@ banner: "imgs/nextcloud4.jpg"
 ## 1.更新软件列表
 ```
 apt update
+apt-get upgrade
 ```
 
 ## 2.安装Apache
@@ -28,6 +29,22 @@ apt install -y mariadb-server
 ## 4.安装PHP7
 ```
 apt install -y libapache2-mod-php7.0
+```
+
+## 4.1.安装php7报错
+```
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package php-7.0
+E: Couldn't find any package by regex 'php-7.0'
+```
+执行
+```
+sudo apt-add-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.0
+sudo apt-get install php7.0-fpm php7.0-mysql;
 ```
 
 ## 5.安装PHP各种扩展
