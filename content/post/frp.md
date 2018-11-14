@@ -147,6 +147,14 @@ ssh -oPort=6000 test@x.x.x.x
 scp -P 6000 local_file test@x.x.x.x:.
 ```
 
+## 常见问题
+```
+[E] [control.go:236] authorization timeout
+```
+提示授权失败，原因是两台机器之间的时钟相差太多（大于15分钟），解决办法
+```
+sudo ntpdate cn.pool.ntp.org
+```
 
 * [frp](https://github.com/fatedier/frp)
 * [ngrok](https://github.com/inconshreveable/ngrok)
