@@ -4,7 +4,7 @@ date: 2019-01-18T09:55:55+08:00
 url: "2019/01/18/macos-tidis"
 categories: ["deploy"]
 tags: ["MacOS","数据库"]
-banner: "imgs/pingcap.jpeg"
+banner: "imgs/pingcap.jpg"
 ---
 
 Tidis是分布式数据库，支持redis协议，多种数据结构支持，编写语言为golang。
