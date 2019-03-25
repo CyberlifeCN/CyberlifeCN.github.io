@@ -2,7 +2,7 @@
 title: "应用程序性能指标"
 date: 2018-09-18T18:07:35+08:00
 url: "2018/09/18/app-perf-test"
-categories: ["test",""architecture""]
+categories: ["test","architecture"]
 tags: ["linux"]
 banner: "imgs/apm.png"
 ---
