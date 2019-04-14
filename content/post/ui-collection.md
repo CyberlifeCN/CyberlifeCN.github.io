@@ -1,7 +1,7 @@
 ---
 title: "使用过的优秀UI收集"
-date: 2019-04-15T18:33:35+08:00
-url: "2019/04/15/ui-collection"
+date: 2019-04-14T18:33:35+08:00
+url: "2019/04/14/ui-collection"
 categories: ["ui"]
 tags: ["ui"]
 banner: "imgs/ui-collection.jpeg"
