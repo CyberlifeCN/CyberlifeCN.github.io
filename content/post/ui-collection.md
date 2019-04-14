@@ -13,22 +13,31 @@ banner: "imgs/ui-collection.jpeg"
 
 * [后台管理模版] (https://colorlib.com/polygon/gentelella/index.html)
 {{< gallery "/imgs/gentelella.jpeg" >}}
+
 * [视频、音乐网站模版] (http://cyber-life.cn/ui/musik/index.html)
-{{< gallery "/imgs/dhr.jpg" >}}
+{{< gallery "/imgs/musik.png" >}}
+
 * [新闻发布网站模版] (http://cyber-life.cn/ui/newsup/index.html)
 {{< gallery "/imgs/newsup.jpg" >}}
+
 * [多用途主站模版] (http://cyber-life.cn/ui/inobiz/index.html)
 {{< gallery "/imgs/inobiz.jpg" >}}
+
 * [富文本编辑器] (http://cyber-life.cn/ui/froala/index.html)
 {{< gallery "/imgs/froala.png" >}}
+
 * [手机app模版] (http://cyber-life.cn/ui/shuttle/index.html)
 {{< gallery "/imgs/shuttle.jpeg" >}}
+
 * [手机新闻] (http://cyber-life.cn/ui/yui/index.html)
 {{< gallery "/imgs/yui.png" >}}
+
 * [手机人力资源管理模版] (http://cyber-life.cn/ui/dhr/index.html)
-{{< gallery "/imgs/thumbor.png" >}}
+{{< gallery "/imgs/dhr.jpg" >}}
+
 * [Webapp框架--BUI交互框架] (http://ui.bui.cyber-life.cn/)
 {{< gallery "/imgs/bui.png" >}}
+
 * [基于BUI移动UI框架开发的品牌电商模版] (http://ui.taobao.cyber-life.cn/)
 {{< gallery "/imgs/taobao.jpg" >}}
 
