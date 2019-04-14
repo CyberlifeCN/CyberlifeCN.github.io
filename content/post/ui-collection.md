@@ -30,7 +30,7 @@ banner: "imgs/ui-collection.jpeg"
 {{< gallery "/imgs/shuttle.jpeg" >}}
 
 * [手机新闻] (http://cyber-life.cn/ui/yui/index.html)
-{{< gallery "/imgs/yui.png" >}}
+{{< gallery "/imgs/yui.jpg" >}}
 
 * [手机人力资源管理模版] (http://cyber-life.cn/ui/dhr/index.html)
 {{< gallery "/imgs/dhr.jpg" >}}
