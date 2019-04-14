@@ -2,8 +2,8 @@
 title: "使用过的优秀UI收集"
 date: 2019-04-15T18:33:35+08:00
 url: "2019/04/15/ui-collection"
-categories: ["deploy"]
-tags: ["linux"]
+categories: ["ui"]
+tags: ["ui"]
 banner: "imgs/ui-collection.jpeg"
 ---
 
@@ -24,7 +24,5 @@ banner: "imgs/ui-collection.jpeg"
 
 
 * [点击查看详情] (http://cyber-life.cn/ui/index.html)
-
-
 
 <!--more-->
