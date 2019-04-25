@@ -1,5 +1,5 @@
 ---
-title: "漂亮的API文档发布主题"
+title: "漂亮的API文档发布网站"
 date: 2019-04-25T11:39:35+08:00
 url: "2019/04/25/docuapi"
 categories: ["deploy"]
@@ -88,5 +88,5 @@ systemctl status docuapi.service
 ### 主要参考资料：
 * [github项目] (https://github.com/bep/docuapi)
 * [使用hugo搭建个人博客站点] (http://cyber-life.cn/2017/12/10/add-your-blog-on-github-pages/)
-
+* [演示] (http://docuapi.cyber-life.cn/)
 <!--more-->
