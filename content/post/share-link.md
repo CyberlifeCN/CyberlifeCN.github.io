@@ -29,7 +29,7 @@ banner: "imgs/share-link.jpg"
 
 下面我们看看奖金是如何分配的：
 
-{{< gallery "/imgs/shuttle.jpeg" >}}
+{{< gallery "/imgs/share-score.png" >}}
 
 * 第一位分享者，获得25%的奖励金；
 * 最后一位分享者（就是就职者前一个分享的人），获得25%的奖励金；
