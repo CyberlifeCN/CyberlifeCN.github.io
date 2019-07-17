@@ -2,8 +2,8 @@
 title: "十大经典排序算法"
 date: 2019-07-17T07:53:35+08:00
 url: "2019/07/17/Algorithm"
-categories: ["algorithm"]
-tags: []
+categories: ["code"]
+tags: ["algorithm"]
 banner: "imgs/Algorithm.jpg"
 ---
 
